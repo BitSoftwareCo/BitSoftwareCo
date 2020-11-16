@@ -14,6 +14,7 @@ Here at Bit we care about you. This is why we pay close attention to the user ex
 |BitUI Beta       |0.0     |No Link!|Free |
 |BitUI Open Source|UI 0 OPN|No Link!|Free |
 
+
 [What's the difference?](https://bit-software-net.github.io/bit-software-net/Products)
 
 ### Contact
