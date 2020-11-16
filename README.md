@@ -1,4 +1,4 @@
-## Home
+### Home
 
 ### About
 Here at Bit we care about you. This is why we pay close attention to the user experience and emotions with our apps and services.
