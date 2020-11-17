@@ -7,8 +7,8 @@
 Here at Bit we care about you. This is why we pay close attention to the user experience and emotions with our apps and services.
 
 ### Products
-1. [JRE](https://java.com/en/) Needed
-2. Windows 10 Preferred
+* [JRE](https://java.com/en/) Needed
+* Windows 10 Preferred
 
 |Name             |Version |Download|Price|
 |-----------------|--------|--------|-----|
