@@ -1,6 +1,8 @@
 ### Home
 ---
 
+[COVID-19](https://bit-software-net.github.io/bit-software-net/COVID-19)
+
 ### About
 Here at Bit we care about you. This is why we pay close attention to the user experience and emotions with our apps and services.
 
