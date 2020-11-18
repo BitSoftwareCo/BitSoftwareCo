@@ -1,5 +1,4 @@
-### Products
----
+## Products
 
 |Name             |Version |Open Source|Free|Price|
 |-----------------|--------|-----------|----|-----|
