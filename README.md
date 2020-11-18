@@ -1,5 +1,4 @@
-### Home
----
+## Home
 
 [COVID-19](https://bitsoftwareco.github.io/bitsoftwareco/COVID-19)
 
