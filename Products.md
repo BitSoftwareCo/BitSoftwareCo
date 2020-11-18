@@ -1,10 +1,8 @@
 ## Products
 
-|Name             |Version |Open Source|Free|Price|
-|-----------------|--------|-----------|----|-----|
-|[BitUI](https://bitsoftwareco.github.io/Products#bitui)            |0       |<ul><li>- [ ] </li></ul>        |<ul><li>- [x] </li></ul>|$0   |
-|[BitUI Beta](https://bitsoftwareco.github.io/Products#bitui-beta)       |0.0     |<ul><li>- [ ] </li></ul>        |<ul><li>- [x] </li></ul>|$0   |
-|[BitUI Open Source](https://bitsoftwareco.github.io/Products#bitUI-open-source)|UI 0 OPN|<ul><li>- [x] </li></ul>|<ul><li>- [x] </li></ul>|$0   |
+* [BitUI](https://bitsoftwareco.github.io/Products#bitui) 
+* [BitUI Beta](https://bitsoftwareco.github.io/Products#bitui-beta)
+* [BitUI Open Source](https://bitsoftwareco.github.io/Products#bitUI-open-source)
 
 ### BitUI
 Although all of the following products are built off of BitOE 2020.2. This product is the premium experience out of the three. This product is heavily tested for bugs and crashes before launch. This product receives updates every month except for December. This will be starting November 30th 2020
