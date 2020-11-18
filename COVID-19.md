@@ -1,6 +1,4 @@
-### COVID-19
-
----
+## COVID-19
 
 ### What we are doing.
 Here at Bit we care for others safty. We are lucky enough to not be affected by COVID-19. If for whatever reason Bit employee's need to meet in person, masks will be needed and if somone is missing a mask they **WILL** be provided one! COVID-19 is **NOT** a joke and is delt with extream caution and care.
