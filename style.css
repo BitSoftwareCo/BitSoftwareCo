@@ -5,14 +5,7 @@ body {
     margin: 0px;
 }
 
-.main {
-    margin: 3em;
-}
-
-.home {
-    text-align: center;
-}
-
+/* Text */
 a {
     color: rgb(0, 128, 255);
     text-decoration: none;
@@ -29,11 +22,11 @@ h3 {
     font-size: 1.25em;
     font-weight: 600;
 }
-
 strong {
     font-weight: 600;
 }
 
+/* Tabble */
 tr {
     background-color: #fff;
     border-top: 1px solid #c6cbd1;
@@ -61,6 +54,7 @@ table {
     text-align: start;
 }
 
+/* Nav Bar */
 .nav-bar ul {
     list-style-type: none;
     margin: 0;
@@ -69,9 +63,9 @@ table {
     background-color: #333;
 }
 .nav-bar li {
-    float: right;
+    float: left;
 }
-.nav-bar li a, .nav-bar .title {
+.nav-bar li a, .nav-bar .title, button {
     display: block;
     color: white;
     text-align: center;
@@ -88,5 +82,45 @@ table {
     background-color: rgb(38, 38, 155);
 }
 .nav-bar .title {
-    float: left;
+    float: right;
+}
+/* Side bar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 3em;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
 }

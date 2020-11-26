@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="https://bitsoftwareco.github.io/">Home</a>
+        <a style="color: white" href="https://bitsoftwareco.github.io/COVID-19.html">COVID-19</a>
+        <a href="https://bitsoftwareco.github.io/Products.html">Products</a>
+        <a href="https://bitsoftwareco.github.io/Hours.html">Hours</a>
+    </div>
+
     <div class="nav-bar">
         <ul>
+            <li><a class="openbtn" onclick="openNav()">☰ Menu</a></li>
             <li class="title">Bit Software Co.</li>
-            <li><a href="https://bitsoftwareco.github.io/Hours.html">Hours</a></li>
-            <li><a href="https://bitsoftwareco.github.io/Products.html">Products</a></li>
-            <li><a class="current" href="https://bitsoftwareco.github.io/COVID-19.html">COVID-19</a></li>
-            <li><a href="https://bitsoftwareco.github.io/">Home</a></li>
         </ul>
     </div>
   
-    <div class="main">
+    <div id="main">
         <h3 id="what-we-are-doing">What we are doing.</h3>
         <p>Here at Bit we care for others safty. We are lucky enough to not be affected by COVID-19. If for whatever reason Bit employee’s need to meet in person, masks will be needed and if somone is missing a mask they <strong>WILL</strong> be provided one! COVID-19 is <strong>NOT</strong> a joke and is delt with extream caution and care.</p>
     
@@ -33,5 +38,6 @@
             <li>All staff <strong>MUST</strong> work from home.</li>
         </ul>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

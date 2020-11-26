@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="https://bitsoftwareco.github.io/">Home</a>
+        <a href="https://bitsoftwareco.github.io/COVID-19.html">COVID-19</a>
+        <a style="color: white" href="https://bitsoftwareco.github.io/Products.html">Products</a>
+        <a href="https://bitsoftwareco.github.io/Hours.html">Hours</a>
+    </div>
+
     <div class="nav-bar">
         <ul>
+            <li><a class="openbtn" onclick="openNav()">☰ Menu</a></li>
             <li class="title">Bit Software Co.</li>
-            <li><a href="https://bitsoftwareco.github.io/Hours.html">Hours</a></li>
-            <li><a class="current" href="https://bitsoftwareco.github.io/Products.html">Products</a></li>
-            <li><a href="https://bitsoftwareco.github.io/COVID-19.html">COVID-19</a></li>
-            <li><a href="https://bitsoftwareco.github.io/">Home</a></li>
         </ul>
     </div>
     
-    <div class="main">
+    <div id="main">
         <h3 id="products">Products</h3>
         <ul>
             <li><a href="https://java.com/en/">JRE</a> Needed</li>
@@ -75,5 +80,6 @@
         <h3 id="bitos">BitOS</h3>
         <p><a href="https://bitsoftwareco.github.io/Products.html#bitos">BitOS</a> is <strong>NOT</strong> built off of <a href="https://bitsoftwareco.github.io/Products.html#bitui">BitUI</a>. <a href="https://bitsoftwareco.github.io/Products.html#bitos">BitOS</a> is a <a href="https://en.wikipedia.org/wiki/Text-based_user_interface">Text-Based OS</a>. This product for now is just an <strong>experiment</strong>.</p>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
