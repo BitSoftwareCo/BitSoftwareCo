@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Software Co. | Hours</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li class="title">Bit Software Co.</li>
+            <li><a class="current" href="https://bitsoftwareco.github.io/Hours.html">Hours</a></li>
+            <li><a href="https://bitsoftwareco.github.io/Products.html">Products</a></li>
+            <li><a href="https://bitsoftwareco.github.io/COVID-19.html">COVID-19</a></li>
+            <li><a href="https://bitsoftwareco.github.io/">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="main"> 
+        <h3>Hours</h3>
+
+        <p id="open"></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Open</th>
+                    <th>Close</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>8:00 am</td>
+                    <td>5:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>8:00 am</td>
+                    <td>5:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:00 am</td>
+                    <td>5:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>8:00 am</td>
+                    <td>5:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8:00 am</td>
+                    <td>5:00 pm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="about">About</h3>
+        <p>Here at Bit we care about you. This is why we pay close attention to the user experience and emotions with our apps and services.</p>
+
+        <h3 id="contact">Contact</h3>
+        <p><a href="https://www.instagram.com/bit.software/?hl=en">Instagram</a>
+        <a href="https://www.facebook.com/Bitoe-101834711703481/">Facebook</a>
+        <a href="mailto:JaredGHolderRallo@gmail.com?subject=%5BSUBJECT%5D&amp;body=Dear%20Jared%20G%20Holder-Rallo%2C%0D%0AI'm%20contacting%20you%20about%20%5BREASON%20FOR%20CONTACT%5D.%20%5BYOUR%20MESSAGE%5D%0D%0A%0D%0A-%5BYOUR%20FIRST%20NAME%5D">eMail</a></p>
+    </div>
+</body>
+<script>
+    const now = new Date();
+    const day = now.getDay();
+    const hour = now.getHours();
+
+    if(day >= 1 && day <= 5) {
+        document.getElementById("open").innerHTML = "We are: Open.";
+    } else {
+        document.getElementById("open").innerHTML = "We are: Closed.";
+    }
+</script>
+</html>
