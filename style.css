@@ -67,20 +67,15 @@ table {
 }
 .nav-bar li a, .nav-bar .title, button {
     display: block;
-    color: white;
+    color: #818181;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 .nav-bar li a:hover {
-    background-color: #111;
+    color: #f1f1f1;
 }
-.nav-bar .current {
-    background-color: rgb(50, 50, 194);
-}
-.nav-bar .current:hover {
-    background-color: rgb(38, 38, 155);
-}
+
 .nav-bar .title {
     float: right;
 }
