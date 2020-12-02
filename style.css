@@ -1,5 +1,6 @@
 /* Bit Software Co look and feel */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -25,6 +26,11 @@ h3 {
 }
 strong {
     font-weight: 600;
+}
+.code {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: rgb(236, 236, 236);
 }
 
 /* Tabble */
