@@ -74,6 +74,21 @@ table {
 /* Nav Bar */
 .bar {
     background-color: rgb(56, 56, 56);
+    display: none;
+}
+.bar-2 {
+    background-color: rgb(56, 56, 56);
+}
+.nav-2 {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .nav {
     max-width: 1024px;
@@ -144,8 +159,20 @@ table {
     transition: margin-left .5s;
     padding: 3em;
 }
+.closebtn {
+    visibility: hidden;
+}
 
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
+@media screen and (min-width: 811px) {
+    #sidebar {
+        width: 250px;
+    }
+    #main {
+        margin-left: 250px;
+    }
+    .nav-2 {margin: 0 250px;}
+}
+@media screen and (max-width: 810px) {
+    .closebtn {visibility: visible;}
+    .bar {display: inherit;}
 }
