@@ -34,7 +34,7 @@
     <div id="main"> 
         <h3>Hours</h3>
 
-        <p id="open"></p>
+        <p>We are: <span id="open"></span>.</p>
 
         <table>
             <thead>
@@ -90,9 +90,11 @@
     const hour = now.getHours();
 
     if(day >= 1 && day <= 5) {
-        document.getElementById("open").innerHTML = "We are: Open.";
+        document.getElementById("open").style.color = "green";
+        document.getElementById("open").innerHTML = "Open";
     } else {
-        document.getElementById("open").innerHTML = "We are: Closed.";
+        document.getElementById("open").style.color = "red";
+        document.getElementById("open").innerHTML = "Closed";
     }
 </script>
 </html>
