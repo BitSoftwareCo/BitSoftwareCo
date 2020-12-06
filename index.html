@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a style="color: white;" href="index.html">Home</a>
-        <a href="Products/Products.html">Products</a>
-        <a href="Products/BitScript.html">BitScript</a>
-        <a href="Company/Hours.html">Hours</a>
-        <a href="New.html">New</a>
-        <br>
-        <h3>Contact</h3>
-        <a href="Company/about-us.html">About Us</a>
-        <a href="https://www.instagram.com/bit.software/?hl=en">Instagram</a>
-        <a href="https://www.facebook.com/Bitoe-101834711703481/">Facebook</a>
-        <a href="https://twitter.com/bit_oe">Twitter</a>
-        <a href="mailto:JaredGHolderRallo@gmail.com">email</a>
+    <div id="sideBar" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <h3>Main</h3>
+            <a style="color: white;" href="index.html">Home</a>
+            <a href="Products/Products.html">Products</a>
+            <a href="Products/BitScript.html">BitScript</a>
+            <a href="Company/Hours.html">Hours</a>
+            <a href="New.html">New</a>
+            <h3>Other</h3>
+            <a href="Company/about-us.html">About Us</a>
+            <a href="https://www.instagram.com/bit.software/?hl=en">Instagram</a>
+            <a href="https://www.facebook.com/Bitoe-101834711703481/">Facebook</a>
+            <a href="https://twitter.com/bit_oe">Twitter</a>
+            <a href="mailto:JaredGHolderRallo@gmail.com">email</a>
+        </div>
     </div>
 
     <div class="bar">
         <nav class="nav">
-            <div onclick="openNav()" class="hamburger">
-                <span class="hamburger__top-bun"></span>
-                <span class="hamburger__bottom-bun"></span>
-              </div>
+            <div class="content">
+                <a class="openbtn" onclick="openNav()">☰ Menu</a>
+            </div>
         </nav>
     </div>
+
     <div style="text-align: center;" id="main">
         <h2>BitUI 1</h2>
         <p>

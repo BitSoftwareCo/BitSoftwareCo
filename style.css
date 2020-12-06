@@ -74,10 +74,6 @@ table {
 /* Nav Bar */
 .bar {
     background-color: rgb(56, 56, 56);
-    display: none;
-}
-.bar-2 {
-    background-color: rgb(56, 56, 56);
 }
 .nav-2 {
     max-width: 1024px;
@@ -97,9 +93,7 @@ table {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 .content a {
     display: block;
@@ -122,57 +116,51 @@ table {
     transition: all 0.3s;
 }
 /* Side bar */
-.sidebar {
+.overlay {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-}
-.sidebar a, .sidebar h3 {
-    padding: 8px 8px 8px 32px;
+}  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}  
+.overlay a {
+    padding: 8px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
 }
-.sidebar h3 {
+.overlay h3 {
     color: white;
 }
-.sidebar a:hover {
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-}
-.sidebar .closebtn {
+}  
+.overlay .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
-#main {
-    transition: margin-left .5s;
-    padding: 3em;
-}
-.closebtn {
-    visibility: hidden;
-}
-
-@media screen and (min-width: 811px) {
-    #sidebar {
-        width: 250px;
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
-    #main {
-        margin-left: 250px;
-    }
-    .nav-2 {margin: 0 250px;}
-}
-@media screen and (max-width: 810px) {
-    .closebtn {visibility: visible;}
-    .bar {display: inherit;}
 }
