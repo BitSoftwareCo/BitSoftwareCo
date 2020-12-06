@@ -4,6 +4,10 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+}
+#main {
+    margin: 2em;
 }
 
 /* Text */
