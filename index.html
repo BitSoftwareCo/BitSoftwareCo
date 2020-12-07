@@ -5,6 +5,33 @@
     <title>Bit Software Co.</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "BitUI BitUI-Open-Source";
+        }
+        .BitUI { grid-area: BitUI; }
+        .BitUI-Open-Source { grid-area: BitUI-Open-Source; }
+
+        @media screen and (max-width: 720px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0px 0px;
+                grid-template-areas:
+                "BitUI"
+                "BitUI-Open-Source";
+            }
+            .BitUI { grid-area: BitUI; }
+            .BitUI-Open-Source { grid-area: BitUI-Open-Source; }            
+        }
+    </style>
 </head>
 <body>
     <div id="sideBar" class="overlay">
@@ -33,21 +60,26 @@
         </nav>
     </div>
 
-    <div style="text-align: center;" id="main">
-        <h2>BitUI 1</h2>
-        <p>
-            Do more in BitUI 1 with 2x faster load times than<br>
-            BitOE! The best part is that it is <strong>FREE</strong>! This year is<br>
-            about speeding up and reworking the backend.<br>
-            <a href="Products.html#bitui">Learn More ></a><br>
-        </p>
-        <h2>BitUI Open Source</h2>
-        <p>
-            We want people to have fun and add there innovation<br>
-            to BitUI. This is why we made BitUI Open Source.<br>
-            <a href="Products.html#bitui-open-source">Learn More ></a><br>
-        </p>
+    <div class="grid-container">
+        <div class="BitUI" style="text-align: center;" >
+            <h2>BitUI 1</h2>
+            <p>
+                Do more in BitUI 1 with 2x faster load times than<br>
+                BitOE! The best part is that it is <strong>FREE</strong>! This year is<br>
+                about speeding up and reworking the backend.<br>
+                <a href="Products/Products.html#bitui">Learn More ></a><br>
+            </p>
+        </div>
+    
+        <div class="BitUI-Open-Source" style="text-align: center;">
+            <h2>BitUI Open Source</h2>
+            <p>
+                We want people to have fun and add there innovation<br>
+                to BitUI. This is why we made BitUI Open Source.<br>
+                <a href="Products/Products.html#bitui-open-source">Learn More ></a><br>
+            </p>
+        </div>
+        <script src="app.js"></script>
     </div>
-    <script src="app.js"></script>
 </body>
 </html>
