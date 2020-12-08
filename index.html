@@ -9,13 +9,14 @@
     <style>
         .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 0px 0px;
+        gap: 0px 2rem;
         grid-template-areas:
-            "BitUI BitUI-Open-Source";
+            "BitUI BitUI-Beta BitUI-Open-Source";
         }
         .BitUI { grid-area: BitUI; }
+        .BitUI-Beta { grid-area: BitUI-Beta; }
         .BitUI-Open-Source { grid-area: BitUI-Open-Source; }
 
         @media screen and (max-width: 720px) {
@@ -23,12 +24,14 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr;
-                gap: 0px 0px;
+                gap: 2rem 0px;
                 grid-template-areas:
                 "BitUI"
+                "BitUI-Beta"
                 "BitUI-Open-Source";
             }
             .BitUI { grid-area: BitUI; }
+            .BitUI-Beta { grid-area: BitUI-Beta; }
             .BitUI-Open-Source { grid-area: BitUI-Open-Source; }            
         }
     </style>
@@ -68,11 +71,21 @@
 
             <h2>BitUI 1</h2>
             <p>
-                Do more in BitUI 1 with 2x faster load times than<br>
-                BitOE! The best part is that it is <strong>FREE</strong>! This year is<br>
-                about speeding up and reworking the backend.<br>
-                <a href="Products/Products.html#bitui">Learn More ></a><br>
+                Price: FREE!<br>
+                Version: 1.0<br>
+                <a href="Products/Products.html#bitui">Learn More ></a>
             </p>
+        </div>
+
+        <div class="BitUI-Beta" style="text-align: center;">
+            <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/2.0-Beta/BitUI-Beta.zip">
+                <img src="icon/BitUI Beta Icon.svg" alt="BitUI Beta Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
+            </a>
+
+            <h2>BitUI Beta</h2>
+            Price: FREE!<br>
+            Version: 2.0-Beta<br>
+            <a href="Products/UI/BitUI-Beta.html">Learn More ></a>
         </div>
     
         <div class="BitUI-Open-Source" style="text-align: center;">
@@ -82,9 +95,9 @@
 
             <h2>BitUI Open Source</h2>
             <p>
-                We want people to have fun and add there innovation<br>
-                to BitUI. This is why we made BitUI Open Source.<br>
-                <a href="Products/Products.html#bitui-open-source">Learn More ></a><br>
+                Price: FREE!<br>
+                Version: UI-1.0-OPN<br>
+                <a href="Products/Products.html#bitui-open-source">Learn More ></a>
             </p>
         </div>
         <script src="app.js"></script>

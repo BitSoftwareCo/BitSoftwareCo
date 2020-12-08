@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitScript - Bit Software Co.</title>
+
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 2rem;
+            grid-template-areas:
+            "Icon Text";
+        }
+        .Icon { grid-area: Icon; }
+        .Text { grid-area: Text; }
+
+        @media screen and (max-width: 720px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 2rem 0px;
+                grid-template-areas:
+                "Icon"
+                "Text";
+            }
+            .Icon { grid-area: Icon; }
+            .Text { grid-area: Text; }         
+        }
+    </style>
+</head>
+<body>
+    <div id="sideBar" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <h3>Main</h3>
+            <a href="../../index.html">Home</a>
+            <a href="../Products.html">Products</a>
+            <a href="../BitScript.html">BitScript</a>
+            <a href="../../Company/Hours.html">Hours</a>
+            <a href="../../New.html">New</a>
+            <h3>Other</h3>
+            <a href="../../Company/about-us.html">About Us</a>
+            <a href="https://www.instagram.com/bit.software/?hl=en">Instagram</a>
+            <a href="https://www.facebook.com/Bitoe-101834711703481/">Facebook</a>
+            <a href="https://twitter.com/bit_oe">Twitter</a>
+            <a href="mailto:JaredGHolderRallo@gmail.com">email</a>
+        </div>
+    </div>
+
+    <div class="bar">
+        <nav class="nav">
+            <div class="content">
+                <a class="openbtn" onclick="openNav()">☰ Menu</a>
+            </div>
+        </nav>
+    </div>
+
+    <div id="main">
+        <div class="grid-container">
+            <div class="Icon" style="text-align: center;">
+                <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/2.0-Beta/BitUI-Beta.zip">
+                    <img src="../../Icon/BitUI Beta Icon.svg" alt="BitUI Beta Icon" style="width: 200px; height: 200px; margin-top: 1rem;">
+                </a>
+            </div>
+    
+            <div class="Text">
+                <h1 style="text-align: center;">Whats New?</h1>
+                <p>
+                    BitUI 2.0 Asgard beings new User Accounts, new Look And Feel, a new Human Interface, & the UI Engine!
+                </p>
+                <br>
+                <p>
+                    Although this is a Beta it is still packed with new features. There still could be bugs, and we need your help to find and repport them.
+                    This is why we are releasing the Beta today!
+                    To give feedback go to <a href="https://github.com/BitSoftwareCo/BitUI/issues/new">https://github.com/BitSoftwareCo/BitUI/issues/new</a>
+                    <br>
+                    <strong>Tap the Icon to Download today!</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../app.js"></script>
+</body>
+</html>
