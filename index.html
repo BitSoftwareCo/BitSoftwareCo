@@ -21,6 +21,7 @@
         .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
         .BitUI-Open-Source { grid-area: BitUI-Open-Source; }
 
+        .mobile-only { display: none; }
 
         @media screen and (max-width: 720px) {
             .grid-container {
@@ -35,8 +36,10 @@
             }
             .BitUI { grid-area: BitUI; }
             .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
-            .BitUI-Beta { display: none; }
-            .BitUI-Open-Source { grid-area: BitUI-Open-Source; }            
+            .BitUI-Open-Source { grid-area: BitUI-Open-Source; } 
+
+            .BitUI-Beta { display: none; }          
+            .mobile-only { display: inherit; }
         }
     </style>
 </head>
@@ -77,6 +80,7 @@
                 Unbox and Unleash with the new BitUI Beta!<br>
                 Beta test the BitUI 2.0 Beta today!<br>
                 <strong>Tap the Icon to Download.</strong><br>
+                <a href="Products/UI/BitUI-Beta.html">See whats new ></a><br>
                 <a href="https://github.com/BitSoftwareCo/BitUI/issues/new">Feedback ></a>
             </p>
         </div>
@@ -88,8 +92,11 @@
             <p>
                 <strong>BitUI</strong><br>
                 Price: Free<br>
-                Version: 1.0<br>
+                Version: 1.0
             </p>
+            <span class="mobile-only">
+                <p>Please Download this on a PC</p>
+            </span>
         </div>
 
         <div class="BitUI-Beta-App" style="text-align: center;">
@@ -101,6 +108,10 @@
                 Price: Free<br>
                 Version: 2.0-Beta<br>
             </p>
+            <span class="mobile-only">
+                <p>Please donwload this on a PC</p>
+                <a href="Products/UI/BitUI-Beta.html">See whats new ></a>
+            </span>
         </div>
     
         <div class="BitUI-Open-Source" style="text-align: center;">
@@ -112,6 +123,9 @@
                 Price: Free<br>
                 Version: UI-1.0-OPN<br>
             </p>
+            <span class="mobile-only">
+                <p>Please donwload this on a PC</p>
+            </span>
         </div>
         <script src="app.js"></script>
     </div>
