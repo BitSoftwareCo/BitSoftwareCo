@@ -19,14 +19,6 @@ a:hover {
     text-decoration: underline;
 }
 
-h1 {
-    border-bottom: 1px solid black;
-    font-weight: 600;
-}
-h3 {
-    font-size: 1.25em;
-    font-weight: 600;
-}
 strong {
     font-weight: 600;
 }
@@ -159,7 +151,7 @@ table {
     font-size: 60px;
 }
   
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
         font-size: 40px;
