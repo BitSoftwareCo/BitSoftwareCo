@@ -8,16 +8,19 @@
 
     <style>
         .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 2rem;
-        grid-template-areas:
-            "BitUI BitUI-Beta BitUI-Open-Source";
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1em 1em;
+            grid-template-areas:
+            "BitUI-Beta BitUI-Beta BitUI-Beta"
+            "BitUI BitUI-Beta-App BitUI-Open-Source";
         }
-        .BitUI { grid-area: BitUI; }
         .BitUI-Beta { grid-area: BitUI-Beta; }
+        .BitUI { grid-area: BitUI; }
+        .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
         .BitUI-Open-Source { grid-area: BitUI-Open-Source; }
+
 
         @media screen and (max-width: 720px) {
             .grid-container {
@@ -27,11 +30,12 @@
                 gap: 2rem 0px;
                 grid-template-areas:
                 "BitUI"
-                "BitUI-Beta"
+                "BitUI-Beta-App"
                 "BitUI-Open-Source";
             }
             .BitUI { grid-area: BitUI; }
-            .BitUI-Beta { grid-area: BitUI-Beta; }
+            .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
+            .BitUI-Beta { display: none; }
             .BitUI-Open-Source { grid-area: BitUI-Open-Source; }            
         }
     </style>
@@ -64,40 +68,49 @@
     </div>
 
     <div class="grid-container">
+        <div class="BitUI-Beta" style="text-align: center;">
+            <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/2.0-Beta/BitUI-Beta.zip">
+                <img src="Icon/BitUI Beta Icon.svg" alt="BitUI Beta Icon" style="width: 200; height: 200; margin-top: 1rem;">
+            </a>
+            <h1>Unbox, Unleash</h1>
+            <p>
+                Unbox and Unleash with the new BitUI Beta!<br>
+                Beta test the BitUI 2.0 Beta today!<br>
+                <strong>Tap the Icon to Download.</strong><br>
+                <a href="https://github.com/BitSoftwareCo/BitUI/issues/new">Feedback ></a>
+            </p>
+        </div>
+
         <div class="BitUI" style="text-align: center;" >
             <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/ui-1/BitUI.zip">
                 <img src="Icon/BitUI Icon.svg" alt="BitUI Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
             </a>
-
-            <h2>BitUI 1</h2>
             <p>
-                Price: FREE!<br>
+                <strong>BitUI</strong><br>
+                Price: Free<br>
                 Version: 1.0<br>
-                <a href="Products/Products.html#bitui">Learn More ></a>
             </p>
         </div>
 
-        <div class="BitUI-Beta" style="text-align: center;">
+        <div class="BitUI-Beta-App" style="text-align: center;">
             <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/2.0-Beta/BitUI-Beta.zip">
                 <img src="Icon/BitUI Beta Icon.svg" alt="BitUI Beta Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
             </a>
-
-            <h2>BitUI Beta</h2>
-            Price: FREE!<br>
-            Version: 2.0-Beta<br>
-            <a href="Products/UI/BitUI-Beta.html">Learn More ></a>
+            <p>
+                <strong>BitUI</strong><br>
+                Price: Free<br>
+                Version: 2.0-Beta<br>
+            </p>
         </div>
     
         <div class="BitUI-Open-Source" style="text-align: center;">
             <a href="https://github.com/BitSoftwareCo/BitUI-Open-Source/archive/1.zip">
                 <img src="Icon/BitUI Open Source Icon.svg" alt="BitUI Open Source Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
             </a>
-
-            <h2>BitUI Open Source</h2>
             <p>
-                Price: FREE!<br>
+                <strong>BitUI</strong><br>
+                Price: Free<br>
                 Version: UI-1.0-OPN<br>
-                <a href="Products/Products.html#bitui-open-source">Learn More ></a>
             </p>
         </div>
         <script src="app.js"></script>
