@@ -72,7 +72,7 @@
 
     <div class="grid-container">
         <div class="BitUI-Beta" style="text-align: center;">
-            <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/2.0-Beta/BitUI-Beta.zip">
+            <a onclick="downloadBitUIBeta()">
                 <img src="Icon/BitUI Beta Icon.svg" alt="BitUI Beta Icon" style="width: 200; height: 200; margin-top: 1rem;">
             </a>
             <h1>Unbox, Unleash</h1>
@@ -86,7 +86,7 @@
         </div>
 
         <div class="BitUI" style="text-align: center;" >
-            <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/ui-1/BitUI.zip">
+            <a onclick="downloadBitUI()">
                 <img src="Icon/BitUI Icon.svg" alt="BitUI Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
             </a>
             <p>
@@ -94,40 +94,55 @@
                 Price: Free<br>
                 Version: 1.0
             </p>
-            <span class="mobile-only">
-                <p>Please Download this on a PC</p>
-            </span>
         </div>
 
         <div class="BitUI-Beta-App" style="text-align: center;">
-            <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/2.0-Beta/BitUI-Beta.zip">
+            <a onclick="downloadBitUIBeta()">
                 <img src="Icon/BitUI Beta Icon.svg" alt="BitUI Beta Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
             </a>
             <p>
                 <strong>BitUI</strong><br>
                 Price: Free<br>
-                Version: 2.0-Beta<br>
+                Version: 2.0-Beta
             </p>
-            <span class="mobile-only">
-                <p>Please donwload this on a PC</p>
-                <a href="Products/UI/BitUI-Beta.html">See whats new ></a>
-            </span>
         </div>
     
         <div class="BitUI-Open-Source" style="text-align: center;">
-            <a href="https://github.com/BitSoftwareCo/BitUI-Open-Source/archive/1.zip">
+            <a onclick="downloadBitUIOpenSource()">
                 <img src="Icon/BitUI Open Source Icon.svg" alt="BitUI Open Source Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
             </a>
             <p>
                 <strong>BitUI</strong><br>
                 Price: Free<br>
-                Version: UI-1.0-OPN<br>
+                Version: UI-1.0-OPN
             </p>
-            <span class="mobile-only">
-                <p>Please donwload this on a PC</p>
-            </span>
         </div>
         <script src="app.js"></script>
     </div>
 </body>
+<script>
+    function downloadBitUI() {
+        if (navigator.userAgent.indexOf("Android") != -1) { alert("Sorry! This can only be downloaded on a PC."); }
+        else if (navigator.userAgent.indexOf("like Mac") != -1) { alert("Sorry! This can only be downloaded on a PC."); } 
+        else {
+            window.open("https://github.com/BitSoftwareCo/BitUI/releases/download/ui-1/BitUI.zip");
+        }
+    }
+
+    function downloadBitUIBeta() {
+        if (navigator.userAgent.indexOf("Android") != -1) { alert("Sorry! This can only be downloaded on a PC."); }
+        else if (navigator.userAgent.indexOf("like Mac") != -1) { alert("Sorry! This can only be downloaded on a PC."); } 
+        else {
+            window.open("https://github.com/BitSoftwareCo/BitUI/releases/download/2.0-Beta/BitUI-Beta.zip");
+        }
+    }
+
+    function downloadBitUIOpenSource() {
+        if (navigator.userAgent.indexOf("Android") != -1) { alert("Sorry! This can only be downloaded on a PC."); }
+        else if (navigator.userAgent.indexOf("like Mac") != -1) { alert("Sorry! This can only be downloaded on a PC."); } 
+        else {
+            window.open("https://github.com/BitSoftwareCo/BitUI-Open-Source/archive/1.zip");
+        }
+    }
+</script>
 </html>
