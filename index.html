@@ -13,10 +13,14 @@
             grid-template-rows: 1fr 1fr;
             gap: 1em 1em;
             grid-template-areas:
-            "BitUI-Beta BitUI-Beta BitUI-Beta"
+            "Main-Display Main-Display Main-Display"
             "BitUI BitUI-Beta-App BitUI-Open-Source";
         }
-        .BitUI-Beta { grid-area: BitUI-Beta; }
+        .Main-Display { grid-area: Main-Display; }
+        .Main-Display img {
+            width: 200;
+            height: 200;
+        }
         .BitUI { grid-area: BitUI; }
         .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
         .BitUI-Open-Source { grid-area: BitUI-Open-Source; }
@@ -25,9 +29,10 @@
             .grid-container {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-                gap: 2rem 0px;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0px 0px;
                 grid-template-areas:
+                "Main-Display"
                 "BitUI"
                 "BitUI-Beta-App"
                 "BitUI-Open-Source";
@@ -35,8 +40,12 @@
             .BitUI { grid-area: BitUI; }
             .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
             .BitUI-Open-Source { grid-area: BitUI-Open-Source; } 
-
-            .BitUI-Beta { display: none; }          
+            .Main-Display { grid-area: Main-Display; }
+            .Main-Display img {
+                width: 100px;
+                height: 100px;
+            }
+            
             .mobile-only { display: inherit; }
         }
 
@@ -70,16 +79,15 @@
     </div>
 
     <div class="grid-container">
-        <div class="BitUI-Beta" style="text-align: center;">
+        <div class="Main-Display" style="text-align: center;">
             <a onclick="downloadBitUIBeta()">
-                <img src="Icon/BitUI Beta Icon.svg" alt="BitUI Beta Icon" style="width: 200; height: 200; margin-top: 1rem;">
+                <img src="Icon/UI Engine Icon.svg" alt="UI Engine Icon" style="margin-top: 1rem;">
             </a>
             <h1>Unbox, Unleash</h1>
             <p>
-                Unbox and Unleash with the new BitUI Beta!<br>
-                Beta test the BitUI 2.0 Beta today!<br>
+                Unbox and Unleash with the most powerful UI Engine yet!<br>
                 <strong>Tap the Icon to Download.</strong><br>
-                <a href="Products/UI/BitUI-Beta.html">See whats new ></a><br>
+                <a href="Products/UI/UI-Engine.html">See whats new ></a><br>
                 <a href="https://github.com/BitSoftwareCo/BitUI/issues/new">Feedback ></a>
             </p>
         </div>
@@ -100,7 +108,7 @@
                 <img src="Icon/BitUI Beta Icon.svg" alt="BitUI Beta Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
             </a>
             <p>
-                <strong>BitUI</strong><br>
+                <strong>BitUI Beta</strong><br>
                 Price: Free<br>
                 Version: 2.0-Beta
             </p>
@@ -111,7 +119,7 @@
                 <img src="Icon/BitUI Open Source Icon.svg" alt="BitUI Open Source Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
             </a>
             <p>
-                <strong>BitUI</strong><br>
+                <strong>BitUI Source</strong><br>
                 Price: Free<br>
                 Version: UI-1.0-OPN
             </p>
