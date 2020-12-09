@@ -14,38 +14,36 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 100px 100px 100px 100px 1fr;
+            grid-template-columns: 1fr 100px 100px 100px 1fr;
             grid-template-rows: 1fr 300px;
-            gap: 0px 1em;
+            gap: 1em;
             grid-template-areas:
-                ". Main-Display Main-Display Main-Display Main-Display ."
-                ". BitUI BitUI-Beta-App BitUI-Open-Source Product-News .";
+                ". Main-Display Main-Display Main-Display ."
+                ". BitUI BitUI-Beta-App BitUI-Open-Source .";
         }
 
         .Main-Display { grid-area: Main-Display; }
         .BitUI { grid-area: BitUI; }
         .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
         .BitUI-Open-Source { grid-area: BitUI-Open-Source; }
-        .Product-News { grid-area: Product-News; }
 
 
         @media screen and (max-width: 720px) {
             .grid-container {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 400px 1fr;
-                gap: 0px 1em;
+                gap: 0px;
                 grid-template-areas:
-                    "Main-Display Main-Display"
-                    "BitUI BitUI-Beta-App"
-                    "BitUI-Open-Source Product-News";
+                    "Main-Display Main-Display Main-Display"
+                    "BitUI BitUI-Beta-App BitUI-Open-Source"
+                    ". . .";
             }
 
             .Main-Display { grid-area: Main-Display; }
             .BitUI { grid-area: BitUI; }
-            .BitUI-Light-App { grid-area: BitUI-Light-App; }
+            .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
             .BitUI-Open-Source { grid-area: BitUI-Open-Source; }
-            .Product-News { grid-area: Product-News; }
         }
 
     </style>
@@ -96,9 +94,9 @@
             </a>
             <p>
                 <strong>BitUI</strong><br>
-                Price: Free<br>
-                Version: 1.0<br>
-                Type: Download
+                Free<br>
+                1.0<br>
+                Download
             </p>
         </div>
 
@@ -108,9 +106,9 @@
             </a>
             <p>
                 <strong>BitUI Beta</strong><br>
-                Price: Free<br>
-                Version: 2.0-Beta<br>
-                Type: Download
+                Free<br>
+                2.0-Beta<br>
+                Download
             </p>
         </div>
     
@@ -120,20 +118,9 @@
             </a>
             <p>
                 <strong>BitUI Source</strong><br>
-                Price: Free<br>
-                Version: UI-1.0-OPN<br>
-                Type: Download
-            </p>
-        </div>
-
-        <div class="Product-News" style="text-align: center;">
-            <a href="Products/News/Home.html">
-                <img src="Icon/News Icon.svg" alt="Product News Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
-            </a>
-            <p>
-                <strong>Product News</strong><br>
-                Price: Free<br>
-                Type: Web
+                Free<br>
+                UI-1.0-OPN<br>
+                Download
             </p>
         </div>
         <script src="app.js"></script>
