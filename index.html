@@ -14,19 +14,18 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 100px 100px 100px 100px 1fr;
+            grid-template-columns: 1fr 100px 100px 100px 1fr;
             grid-template-rows: 1fr 300px;
             gap: 1em;
             grid-template-areas:
-                ". Main-Display Main-Display Main-Display Main-Display ."
-                ". BitUI BitUI-Beta-App BitUI-Open-Source BitOS .";
+                ". Main-Display Main-Display Main-Display ."
+                ". BitUI BitUI-Beta-App BitUI-Open-Source .";
         }
 
         .Main-Display { grid-area: Main-Display; }
         .BitUI { grid-area: BitUI; }
         .BitUI-Beta-App { grid-area: BitUI-Beta-App; }
         .BitUI-Open-Source { grid-area: BitUI-Open-Source; }
-        .BitOS { grid-area: BitOS; }
 
 
         @media screen and (max-width: 720px) {
@@ -125,19 +124,6 @@
                 Download
             </p>
         </div>
-
-        <div class="BitOS" style="text-align: center;">
-            <a onclick="alert('This product is currently in development.')">
-                <img src="Icon/BitOS Icon.svg" alt="BitOS Icon" style="width: 100px; height: 100px; margin-top: 1rem;">
-            </a>
-            <p>
-                <strong>BitOS</strong><br>
-                Free<br>
-                1.0<br>
-                ISO
-            </p>
-        </div>
-        <script src="app.js"></script>
     </div>
 </body>
 <script>
