@@ -5,6 +5,7 @@
     <title>Bit Software Co.</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Icon/Bit Software Co Icon.svg">
 
     <style>
         .Main-Display img {
@@ -55,7 +56,6 @@
         <div class="overlay-content">
             <h3>Main</h3>
             <a style="color: white;" href="index.html">Home</a>
-            <a href="Products/Products.html">Products</a>
             <a href="Products/BitScript.html">BitScript</a>
             <a href="Company/Hours.html">Hours</a>
             <a href="New.html">New</a>
@@ -75,6 +75,11 @@
             </div>
         </nav>
     </div>
+    <div class="bar" style="background: linear-gradient(147deg, rgba(4,0,80,1) 0%, rgba(73,31,89,1) 24%, rgba(255,113,113,1) 83%, rgba(145,63,98,1) 100%);">
+        <nav class="nav-2">
+            <a href="New.html" style="color: white;">See Whats New ></a>
+        </nav> 
+    </div>
 
     <div class="grid-container">
         <div class="Main-Display" style="text-align: center;">
@@ -83,8 +88,10 @@
             </a>
             <h1>Faster, Stronger</h1>
             <p>
-                The new Faster and Stronger UI Engine will be moved to <a href="https://docs.microsoft.com/en-us/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp?view=msvc-160">Visual C++</a><br>
-                <strong>Tap the Icon to learn more.</strong><br>
+                The new Faster, Stronger, and Optimized<br>
+                UI-Engine will be built into the next<br>
+                version of BitUI Beta!<br>
+                <a href="Products/C++/C++.html">Learn More ></a><br>
             </p>
         </div>
 
@@ -96,7 +103,7 @@
                 <strong>BitUI</strong><br>
                 Free<br>
                 1.0<br>
-                Download
+                <a onclick="downloadBitUI()">Download</a>
             </p>
         </div>
 
@@ -107,8 +114,8 @@
             <p>
                 <strong>BitUI Beta</strong><br>
                 Free<br>
-                2.0-Beta<br>
-                Download
+                <a href="Products/UI/BitUI-Beta.html">2.0</a><br>
+                <a onclick="downloadBitUIBeta()">Download</a>
             </p>
         </div>
     
@@ -119,18 +126,35 @@
             <p>
                 <strong>BitUI Source</strong><br>
                 Free<br>
-                UI-2.0-OPN<br>
-                Download
+                <a href="Products/UI/BitUI-Open-Source.html">UI-2.0-OPN</a><br>
+                <a onclick="downloadBitUIOpenSource()">Download</a>
             </p>
         </div>
     </div>
 </body>
+<script src="app.js"></script>
 <script>
     function downloadBitUI() {
         if (navigator.userAgent.indexOf("Android") != -1) { alert("Sorry! This can only be downloaded on a PC."); }
         else if (navigator.userAgent.indexOf("like Mac") != -1) { alert("Sorry! This can only be downloaded on a PC."); } 
         else {
             window.open("https://github.com/BitSoftwareCo/BitUI/releases/download/ui-1/BitUI.zip");
+        }
+    }
+
+    function downloadBitUIBeta() {
+        if (navigator.userAgent.indexOf("Android") != -1) { alert("Sorry! This can only be downloaded on a PC."); }
+        else if (navigator.userAgent.indexOf("like Mac") != -1) { alert("Sorry! This can only be downloaded on a PC."); } 
+        else {
+            window.open("https://github.com/BitSoftwareCo/BitUI/releases/download/2.0-Beta/BitUI-Beta.zip");
+        }
+    }
+
+    function downloadBitUIOpenSource() {
+        if (navigator.userAgent.indexOf("Android") != -1) { alert("Sorry! This can only be downloaded on a PC."); }
+        else if (navigator.userAgent.indexOf("like Mac") != -1) { alert("Sorry! This can only be downloaded on a PC."); } 
+        else {
+            window.open("https://github.com/BitSoftwareCo/BitUI-Open-Source/archive/main.zip");
         }
     }
 </script>
