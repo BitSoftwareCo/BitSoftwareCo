@@ -14,7 +14,7 @@ body {
     padding: 0;
 }
 
-main {
+#main {
     margin-left: 5rem;
     padding: 1rem;
 }
@@ -80,5 +80,6 @@ main {
   
     #main {
       margin: 0;
+      margin-bottom: 5rem;
     }
 }
