@@ -7,9 +7,24 @@
 
     <link rel="icon" href="res/browser-icon.svg">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "Product-1 Product-2 Product-3";
+        }
+
+        .Product-1 { grid-area: Product-1; }
+        .Product-2 { grid-area: Product-2; }
+        .Product-3 { grid-area: Product-3; }
+    </style>
 </head>
-<body>
-    <nav>
+<body style="background: linear-gradient(180deg, #202121 0%, #000000 100%);">
+    <nav style="background: linear-gradient(166deg, rgba(238,0,20,1) 0%, rgba(71,0,211,1) 100%);">
         <div class="icon-container">
             <a href="index.html">
                 <img src="res/logo.svg" alt="">
@@ -26,22 +41,46 @@
 
     <main style="text-align: center; 
                  padding-top: 100px;">
-        <h1 style="padding-bottom: 25px;"> 
-            <i>
-                "We are here to not only help,<br>
-                but to solve issues in a modern way."<br>
-            </i>
-        </h1>
         
-        <h1 style="padding-top: 25px;">What do we do?</h1>
-        <p style="padding-bottom: 25px;">
-            Here at BSC our job is to make sure<br>
-            our child company's are producing<br>
-            great products.
-        </p>
+        <div style="height: 55vh; padding-top: inherit;">
+            <h1>🔥 Top Products</h1>
+
+            <div class="grid-container">
+                <div class="Product-1">
+                    <h2>#1</h2>
+
+                    <h3>
+                        <a href="products/BitUI-Beta.html">BitUI Beta</a>
+                    </h3>
+
+                    <strong>Developer:</strong>
+                    <a href="companys/BitSoftwareCo.html">Bit Software Co.</a>
+                </div>
+                <div class="Product-2">
+                    <h2>#2</h2>
+
+                    <h3>
+                        <a href="products/BitUI.html">BitUI</a>
+                    </h3>
+
+                    <strong>Developer:</strong>
+                    <a href="companys/BitSoftwareCo.html">Bit Software Co.</a>
+                </div>
+                <div class="Product-3">
+                    <h2>#3</h2>
+
+                    <h3>
+                        <a href="products/BitUI-Open-Source.html">BitUI Open Source</a>
+                    </h3>
+
+                    <strong>Developer:</strong>
+                    <a href="companys/BitSoftwareCo.html">Bit Software Co.</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
+    <footer style="background-color: #141414;">
         <p>
             <a href="index.html">BSC</a> - 2021
         </p>

@@ -7,11 +7,13 @@
 }
 
 body {
-    background-color: #081e35;
     color: white;
     margin: 0;
 
     font-family: sans-serif;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1, h2, h3, h4,
@@ -41,7 +43,6 @@ a:hover {
 }
 
 nav {
-    background: linear-gradient(166deg, rgba(238,0,20,1) 0%, rgba(71,0,211,1) 100%);
     padding-bottom: 80px;
     clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
     margin-bottom: 10px;
@@ -66,7 +67,6 @@ footer {
 	width: 100%;
 	left: 0;
     bottom: 0;
-    background-color: #061729;
 	color: white;
 	text-align: center;
 }
