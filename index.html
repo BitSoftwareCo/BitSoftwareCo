@@ -13,7 +13,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr;
-            gap: 10px 10px;
+            gap: 50px 60px;
             grid-template-areas:
                 "Product-1 Product-2 Product-3";
         }
@@ -22,21 +22,18 @@
         .Product-2 { grid-area: Product-2; }
         .Product-3 { grid-area: Product-3; }
 
-        .main { padding-top: 100px; }
-
         @media only screen and (max-width: 696px) {
-            .main { padding-top: 50px; }
 
             .grid-container {
                 display: grid;
                 grid-template-columns: 0.2fr 1fr 0.2fr;
                 grid-template-rows: 1fr 1fr 1fr;
-                gap: 10px 10px;
+                gap: 50px 10px;
                 grid-template-areas:
                     ". Product-1 ."
                     ". Product-2 ."
                     ". Product-3. ";
-                align-items: center;
+                padding-bottom: 50px;
             }
         }   
     </style>
@@ -51,45 +48,48 @@
 
         <div class="nav-bar">
             <a href="products/products.html" class="nav-item">Products</a>
+            <a href="about.html" class="nav-item">About</a>
         </div>
     </nav>
 
-    <main class="main" style="text-align: center;">
+    <main style="text-align: center;">
         
         <div class="top-products" style="height: 55vh;">
             <h1>🔥 Top Products</h1>
 
             <div class="grid-container">
-                <div class="Product-1 glass">
-                    <h2>#1</h2>
+                <a href="products/BitSoftwareCo/BitUI-Beta.html">
+                    <div class="Product-1 glass" style="padding-bottom: 10px;">
+                        <h2>#1</h2>
+    
+                        <h3>BitUI Beta</h3>
+    
+                        <strong>Developer:</strong>
+                        <p>Bit Software Co</p>
+                    </div>
+                </a>
 
-                    <h3>
-                        <a href="products/BitSoftwareCo/BitUI-Beta.html">BitUI Beta</a>
-                    </h3>
-
-                    <strong>Developer:</strong>
-                    <p>Bit Software Co</p>
-                </div>
-                <div class="Product-2 glass">
-                    <h2>#2</h2>
-
-                    <h3>
-                        <a href="products/BitSoftwareCo/BitUI.html">BitUI</a>
-                    </h3>
-
-                    <strong>Developer:</strong>
-                    <p>Bit Software Co</p>
-                </div>
-                <div class="Product-3 glass">
-                    <h2>#3</h2>
-
-                    <h3>
-                        <a href="products/BitSoftwareCo/BitUI-Open-Source.html">BitUI Open Source</a>
-                    </h3>
-
-                    <strong>Developer:</strong>
-                    <p>Bit Software Co</p>
-                </div>
+                <a href="products/BitSoftwareCo/BitUI.html">
+                    <div class="Product-2 glass" style="padding-bottom: 10px;">
+                        <h2>#2</h2>
+    
+                        <h3>BitUI</h3>
+    
+                        <strong>Developer:</strong>
+                        <p>Bit Software Co</p>
+                    </div>
+                </a>
+                
+                <a href="products/BitSoftwareCo/BitUI-Open-Source.html">
+                    <div class="Product-3 glass" style="padding-bottom: 10px;">
+                        <h2>#3</h2>
+    
+                        <h3>BitUI Open Source</h3>
+    
+                        <strong>Developer:</strong>
+                        <p>Bit Software Co</p>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
