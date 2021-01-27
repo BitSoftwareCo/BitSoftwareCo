@@ -26,6 +26,18 @@
 
         @media only screen and (max-width: 696px) {
             .main { padding-top: 50px; }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 0.2fr 1fr 0.2fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 10px 10px;
+                grid-template-areas:
+                    ". Product-1 ."
+                    ". Product-2 ."
+                    ". Product-3. ";
+                align-items: center;
+            }
         }   
     </style>
 </head>
