@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSC - Products</title>
+
+    <link rel="icon" href="../res/browser-icon.svg">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "Product-1 Product-2 Product-3";
+        }
+
+        .Product-1 { grid-area: Product-1; }
+        .Product-2 { grid-area: Product-2; }
+        .Product-3 { grid-area: Product-3; }
+
+        .main { padding-top: 100px; }
+
+        @media only screen and (max-width: 696px) {
+            .main { padding-top: 50px; }
+        }   
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="icon-container">
+            <a href="../index.html">
+                <img src="../res/logo.svg" alt="" style="padding-bottom: 20px;">
+            </a>
+        </div>
+
+        <div class="nav-bar">
+            <a href="products.html" class="nav-item">Products</a>
+        </div>
+    </nav>
+
+    <main class="main" style="text-align: center;">
+        <div class="products" style="height: 55vh; padding-top: inherit;">
+            <h1>All Products</h1>
+
+            <div class="bitsoftwareco">
+                <h3>Bit Software Co.</h3>
+        
+                <div class="grid-container">
+                    <div class="Product-1">
+                        <h2>
+                            <a href="products/BitSoftwareCo/BitUI.html">BitUI</a>
+                        </h2>
+                        <i>"Faster than ever in a modern way."</i>
+                    </div>
+                    <div class="Product-2">
+                        <h2>
+                            <a href="products/BitSoftwareCo/BitUI-Beta.html">BitUI Beta</a>
+                        </h2>
+                        <i>"Its like Night and Day."</i>
+                    </div>
+                    <div class="Product-3">
+                        <h2>
+                            <a href="products/BitSoftwareCo/BitUI-Open-Source.html">BitUI Open Source</a>
+                        </h2>
+                        <i>"Inovate with Open Source."</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
