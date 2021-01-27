@@ -4,10 +4,12 @@
 
     --bsc-color-2: #014caf;
     --bsc-color-2-dark: #053472;
+
+    text-shadow: 5px 3px 10px #00000080;
 }
 
 body {
-    background: linear-gradient(180deg, #202121 0%, #000000 100%);
+    background: linear-gradient(166deg, rgba(238,0,20,1) 0%, rgba(71,0,211,1) 100%);
     color: white;
     margin: 0;
 
@@ -44,7 +46,6 @@ a:hover {
 }
 
 nav {
-    background: linear-gradient(166deg, rgba(238,0,20,1) 0%, rgba(71,0,211,1) 100%);
     padding-bottom: 80px;
     clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
     margin-bottom: 10px;
@@ -71,4 +72,16 @@ footer {
     bottom: 0;
 	color: white;
 	text-align: center;
+}
+
+.glass {
+    box-shadow: 20px 20px 50px #00000080;
+    background: #ffffff1a;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    backdrop-filter: blur(5px);
+}
+
+main {
+    padding: 20px;
 }
