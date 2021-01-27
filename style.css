@@ -80,6 +80,7 @@ footer {
     border-top: 1px solid #ffffff80;
     border-left: 1px solid #ffffff80;
     backdrop-filter: blur(5px);
+    padding: 20px;
 }
 .glass:hover {
     box-shadow: 20px 20px 50px #00000098;
