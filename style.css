@@ -1,28 +1,23 @@
-* {
-    --bsc-color-1: #9f7be1;
-    --bsc-color-1-dark: #544177;
-
-    --bsc-color-2: #014caf;
-    --bsc-color-2-dark: #053472;
-
-    text-shadow: 5px 3px 10px #00000080;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
     background: linear-gradient(166deg, rgba(238,0,20,1) 0%, rgba(71,0,211,1) 100%);
     color: white;
     margin: 0;
 
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 5px 3px 10px #00000099;
 
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 h1, h2, h3, h4,
-p,
-a {
-    font-weight: 300;
+p, a,
+input, select, textarea,
+i, s {
+    font-weight: lighter;
 }
 
 p {
@@ -47,7 +42,6 @@ a:hover {
 
 nav {
     padding-bottom: 80px;
-    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
     margin-bottom: 10px;
 }
 .nav-bar {
@@ -59,6 +53,15 @@ nav {
     display: list-item;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.nav-item-current {
+    text-decoration: thick;
+    color: white;
+    text-shadow: 5px 3px 10px #ffffff91;
+}
+.nav-item-current:hover {
+    text-shadow: 5px 3px 10px #ffffffce;
 }
 
 div {
@@ -84,6 +87,10 @@ footer {
 }
 .glass:hover {
     box-shadow: 20px 20px 50px #00000098;
+}
+
+.center {
+    margin: auto;
 }
 
 main {

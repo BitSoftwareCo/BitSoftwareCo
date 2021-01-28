@@ -1,0 +1,12 @@
+BitUI 3.0
+
+- Background Images
+- Live Settings
+- Window Controls
+- System Icons
+- Nimbus Look and Feel
+- Refined UI
+- JavaScript Support
+- Welcome Message
+- Photo View
+- More Support
