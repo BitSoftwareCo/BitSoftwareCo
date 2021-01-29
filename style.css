@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
@@ -6,7 +6,7 @@ body {
     color: white;
     margin: 0;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     text-shadow: 5px 3px 10px #00000099;
 
     background-repeat: no-repeat;
@@ -88,7 +88,6 @@ footer {
 .glass:hover {
     box-shadow: 20px 20px 50px #00000098;
 }
-
 .center {
     margin: auto;
 }
