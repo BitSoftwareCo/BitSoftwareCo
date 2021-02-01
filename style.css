@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
@@ -6,18 +6,11 @@ body {
     color: white;
     margin: 0;
 
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-shadow: 5px 3px 10px #00000099;
 
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-h1, h2, h3, h4,
-p, a,
-input, select, textarea,
-i, s {
-    font-weight: lighter;
 }
 
 p {

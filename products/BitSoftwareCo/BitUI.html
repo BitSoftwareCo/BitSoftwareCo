@@ -31,17 +31,6 @@
             width: 80%;
         }
 
-        .grid-container-1 {
-            display: grid;
-            grid-template-columns: 1.3fr 0.7fr;
-            grid-template-rows: 1fr;
-            gap: 0px 0px;
-            grid-template-areas:
-                "Background-Images System-Icons";
-        }
-        .Background-Images { grid-area: Background-Images; }
-        .System-Icons { grid-area: System-Icons; }
-
 
         @media only screen and (max-width: 696px) {
             .grid-container {
@@ -59,7 +48,7 @@
     </style>
 
 </head>
-<body style="background-image: linear-gradient(#3077ad 28.13%, #22699e 100%)">
+<body style="background-image: linear-gradient(#215277 28.13%, #0c3657 100%)">
     <nav>
         <div class="icon-container">
             <a href="../../index.html">
@@ -74,55 +63,16 @@
     </nav>
 
     <main style="text-align: center;">
-        <img src="../../res/bitui.png" alt="" class="icon-container">
+        <img src="../../res/BitUI/bitui.png" alt="" class="icon-container">
         <h3>BitUI Banff</h3>
         <h1>Faster than ever in a modern way.</h1>
+        <i>JDK 14 NEEDED</i><br>
 
         <p>
             <a href="../changelog/BitUI.txt">Change Log</a>
             <strong> | </strong> 
             <a href="https://github.com/BitSoftwareCo/BitUI/releases/download/2.2/BitUI-2.2.zip"><u>Download</u></a>
         </p>
-
-        <div class="glass">
-            <h1>Bringing Back The Old.</h1>
-            <p>This month we focused on bringing back the old</p>
-            
-            <div class="grid-container">
-                <div class="Window-Control glass center">
-                    <h3>Window Control</h3>
-
-                    <p>
-                        Controling Windows has never been easer then now. You can get window counts, close, minimize, and maximize windows with
-                        the all new "Window" Menu.
-                    </p>
-                </div>
-                <div class="Welcome-Message glass center">
-                    <h3>Welcome Message</h3>
-
-                    <p>
-                        Every time you log in there will be a message with the date. We plan on adding more features to this message.
-                    </p>
-                </div>
-                <div class="JavaScript-Support glass center">
-                    <h3>JavaScript Support</h3>
-
-                    <p>
-                        You can now run JavaScript files threw the terminal. We plan on making a JavaScript libary to give JavaScript more
-                        UI-Engine features(Messages, Window Making, Closing and Opening apps, ect);
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-container-1" style="margin-top: 10%;">
-            <div class="Background-Images">
-                <h1>Background Images</h1>
-            </div>
-            <div class="System-Icons">
-                <h1>System Icons</h1>
-            </div>
-        </div>
     </main>
 </body>
 </html>
