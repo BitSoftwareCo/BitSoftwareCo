@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSC - Support on Linux</title>
+
+    <link rel="icon" href="../res/browser-icon.svg">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 50px 60px;
+            grid-template-areas:
+                "Product-1 Product-2 Product-3";
+        }
+
+        .Product-1 { grid-area: Product-1; }
+        .Product-2 { grid-area: Product-2; }
+        .Product-3 { grid-area: Product-3; }
+
+        @media only screen and (max-width: 696px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: 0.2fr 1fr 0.2fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 50px 10px;
+                grid-template-areas:
+                    ". Product-1 ."
+                    ". Product-2 ."
+                    ". Product-3. ";
+                padding-bottom: 50px;
+            }
+        }   
+    </style>
+</head>
+<body style="background: linear-gradient(166deg, #0B57A4 0%, #072C61 100%); background-repeat: no-repeat; background-attachment: fixed;">
+    <nav>
+        <div class="icon-container">
+            <a href="../index.html">
+                <img src="../res/logo.svg" alt="" style="padding-bottom: 20px; ">
+            </a>
+        </div>
+
+        <div class="nav-bar">
+            <a href="../products/products.html" class="nav-item">Products</a>
+            <a href="../about.html" class="nav-item">About</a>
+        </div>
+    </nav>
+
+    <main style="text-align: center;">
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="" style="width: 51.1px; height: 51.1px;">
+            <img src="../res/BitUI/bitui.png" alt="">
+        </div>
+        <h1>What does Support on Linux mean?</h1>
+        <p>
+            To put it simply we are bringing more support for Linux. Before only certain platforms would work.<br>
+            We are pushing the boundaries past Debian based Linux distros. Now BitUI can run on all 3 major platforms.<br>
+        </p>
+        <br>
+
+        <h1>Supported Platforms</h1>
+        <p>
+            Windows 10<br>
+            MacOS<br>
+            Linux
+        </p>
+    </main>
+</body>
+</html>
