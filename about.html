@@ -6,25 +6,39 @@
     <title>BSC</title>
 
     <link rel="icon" href="res/browser-icon.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="neumorphsim.css">
+
+    <style>
+        .about { 
+            width: 50%; 
+            padding: 25px;
+        }
+
+        @media only screen and (max-width: 696px) {
+            .about { 
+                width: 91%; 
+                padding: 13px;
+            }   
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <div class="icon-container">
+        <div class="center">
             <a href="index.html">
                 <img src="res/logo.svg" alt="" style="padding-bottom: 20px;">
             </a>
         </div>
 
-        <div class="nav-bar">
-            <a href="products/products.html" class="nav-item">Products</a>
-            <a href="about.html" class="nav-item nav-item-current">About</a>
+        <div class="center">
+            <a href="products/products.html" style="padding-left: 5px; padding-right: 5px;">Products</a>
+            <a href="about.html" style="padding-left: 5px; padding-right: 5px;"><strong>About</strong></a>
         </div>
     </nav>
 
-    <main style="text-align: center;">
+    <main style="text-align: center; padding-top: 50px;">
         <h1>Who are We?</h1>
-        <div class="glass center" style="width: 50%;">
+        <div class="bevel center about">
             <p>
                 We are BSC.<br>
                 BSC is a parent company to Bit Software Co and BSC General. Here at BSC we are a big fan of Open Source. We plan on releasing 

@@ -6,64 +6,25 @@
     <title>BitUI - Bit Software Co</title>
 
     <link rel="icon" href="../../res/browser-icon.svg">
-    <link rel="stylesheet" href="../../style.css">
-
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 0px 50px;
-            grid-template-areas:
-                "Window-Control Welcome-Message JavaScript-Support";
-        }
-
-        .Window-Control {
-            grid-area: Window-Control;
-            width: 80%;
-        }
-        .Welcome-Message {
-            grid-area: Welcome-Message;
-            width: 80%;
-        }
-        .JavaScript-Support {
-            grid-area: JavaScript-Support;
-            width: 80%;
-        }
-
-
-        @media only screen and (max-width: 696px) {
-            .grid-container {
-                display: grid;
-                grid-template-columns: 0.2fr 1fr 0.2fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                gap: 50px 10px;
-                grid-template-areas:
-                    ". Window-Control ."
-                    ". Welcome-Message ."
-                    ". JavaScript-Support . ";
-                padding-bottom: 50px;
-            }
-        }   
-    </style>
+    <link rel="stylesheet" href="../../neumorphsim.css">
 
 </head>
-<body style="background-image: linear-gradient(#215277 28.13%, #0c3657 100%)">
+<body>
     <nav>
-        <div class="icon-container">
+        <div class="center">
             <a href="../../index.html">
-                <img src="../../res/logo-products.svg" alt="" style="padding-bottom: 20px;">
+                <img src="../../res/logo.svg" alt="" style="padding-bottom: 20px;">
             </a>
         </div>
 
-        <div class="nav-bar">
-            <a href="../products.html" class="nav-item">Products</a>
-            <a href="../../about.html" class="nav-item">About</a>
+        <div class="center">
+            <a href="../products.html" style="padding-left: 5px; padding-right: 5px;">Products</a>
+            <a href="../../about.html" style="padding-left: 5px; padding-right: 5px;">About</a>
         </div>
     </nav>
 
-    <main style="text-align: center;">
-        <img src="../../res/BitUI/bitui.png" alt="" class="icon-container">
+    <main style="text-align: center; padding-top: 160px;">
+        <img src="../../res/BitUI/bitui.png" alt="" class="center">
         <h3>BitUI Banff</h3>
         <h1>Faster than ever in a modern way.</h1>
         <i>JDK 14 NEEDED</i><br>
@@ -73,7 +34,7 @@
             <strong> | </strong>
             <a href="../../info/support-on-linux.html">Support on Linux</a>
             <strong> | </strong> 
-            <a href="https://firebasestorage.googleapis.com/v0/b/bitui-release.appspot.com/o/3.0%2FBitUI-3.0.zip?alt=media&token=873bfae3-2836-4aeb-8348-4cd49a921148"><u>Download</u></a>
+            <a href="https://firebasestorage.googleapis.com/v0/b/bitui-release.appspot.com/o/3.0%2FBitUI-3.0.zip?alt=media&token=873bfae3-2836-4aeb-8348-4cd49a921148">Download</a>
         </p>
     </main>
 </body>
