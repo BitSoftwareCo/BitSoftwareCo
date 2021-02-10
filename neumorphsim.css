@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root {
+    --background-main: #d8e1ea;   
+
+    --bevel-dark: #bebebe;
+    --bevel-light: #ffffff;
+
+    --main-color: #0F40EB;
+    --main-color-light: #1D68F5;
+    --main-color-dark: #0B32B7;
+}
+
 body {
-    background: #d8e1ea;
+    background: var(--background-main);
 
     font-family: 'Open Sans', sans-serif;
     color: #001f3f;
@@ -11,38 +22,41 @@ body {
 
 .bevel {
     border-radius: 29px;
-    background: #d8e1ea;
-    box-shadow:  5px 5px 9px #bebebe,
-                -5px -5px 9px #ffffff;
+    background: var(--background-main);
+    box-shadow:  5px 5px 9px var(--bevel-dark),
+                -5px -5px 9px var(--bevel-light);
     padding: 5px;
 }
 .bevel-concave {
     border-radius: 29px;
     background: linear-gradient(145deg, #c2cbd3, #e7f1fa);
-    box-shadow:  4px 4px 6px #bebebe,
-                -4px -4px 6px #ffffff;
+    box-shadow:  4px 4px 6px var(--bevel-dark),
+                -4px -4px 6px var(--bevel-light);
     padding: 5px;
 }
 .bevel-convex {
     border-radius: 29px;
     background: linear-gradient(145deg, #e7f1fa, #c2cbd3);
-    box-shadow:  4px 4px 6px #bebebe,
-                -4px -4px 6px #ffffff;
+    box-shadow:  4px 4px 6px var(--bevel-dark),
+                -4px -4px 6px var(--bevel-light);
     padding: 5px;
 }
 .bevel-inset {
     border-radius: 29px;
-    background: #d8e1ea;
-    box-shadow: inset 4px 4px 6px #bebebe,
-                inset -4px -4px 6px #ffffff;
+    background: var(--background-main);
+    box-shadow: inset 4px 4px 6px var(--bevel-dark),
+                inset -4px -4px 6px var(--bevel-light);
     padding: 5px
 }
-.bevel-hidden:hover {
+
+.bevel-hidden {
     border-radius: 29px;
-    background: #dde1e7;
-    box-shadow:  5px 5px 9px #bebebe,
-                -5px -5px 9px #ffffff;
     padding: 5px;
+}
+.bevel-hidden:hover {
+    background: var(--background-main);
+    box-shadow:  1px 1px 9px var(--bevel-dark),
+                -1px -1px 9px var(--bevel-light);
 }
 
 .left { float: left; }
@@ -55,7 +69,6 @@ body {
 
 .circle { border-radius: 50%; }
 
-.active { background-color: var(--main-color); }
 a {
     text-decoration: none;
     color: #003870;
