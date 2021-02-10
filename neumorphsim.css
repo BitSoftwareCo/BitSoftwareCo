@@ -49,16 +49,6 @@ body {
     padding: 5px
 }
 
-.bevel-hidden {
-    border-radius: 29px;
-    padding: 5px;
-}
-.bevel-hidden:hover {
-    background: var(--background-main);
-    box-shadow:  1px 1px 9px var(--bevel-dark),
-                -1px -1px 9px var(--bevel-light);
-}
-
 .left { float: left; }
 .right { float: right; }
 .center { 

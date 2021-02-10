@@ -8,6 +8,39 @@
     <link rel="icon" href="../../res/browser-icon.svg">
     <link rel="stylesheet" href="../../neumorphsim.css">
 
+    <style>
+        input[type=text], input[type=password] {
+            border: none;
+            outline: none;
+            padding: 10px;
+        }
+
+        input[type=submit] {
+            color: #0040dd;
+            border-radius: 80px;
+            border-style: none;
+            outline: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type=submit]:active {
+            background: linear-gradient(145deg, #c2cbd3, #e7f1fa);
+            box-shadow:  4px 4px 6px var(#bebebe),
+                        -4px -4px 6px var(#ffffff);
+        }
+
+        .about { 
+            width: 50%; 
+            padding: 25px;
+        }
+
+        @media only screen and (max-width: 696px) {
+            .about { 
+                width: 91%; 
+                padding: 13px;
+            }   
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -28,15 +61,13 @@
         <h1>data.ini File Generator</h1>
         <i>BitUI ONLY</i><br>
         <br>
-        <div class="bevel">
+        <div class="bevel about center">
             <form onsubmit="generate()">
-                <label for="nameInput">Name</label><br>
-                <input type="text" name="nameInput" id="name"><br>
+                <input type="text" name="nameInput" id="name" class="bevel-concave" placeholder="Name..." autocomplete="false" spellcheck="false"><br>
                 <br>
-                <label for="passwordInput">Password</label><br>
-                <input type="password" name="passwordInput" id="password"><br>
+                <input type="password" name="passwordInput" id="password" class="bevel-concave" placeholder="Password..."><br>
                 <br>
-                <input type="submit" value="Generate">
+                <input type="submit" value="Generate" class="bevel-convex">
             </form>
         </div>
     </main>
