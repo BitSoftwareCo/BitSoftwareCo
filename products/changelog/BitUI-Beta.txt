@@ -1,7 +1,0 @@
-BitUI 3.1
-
-➕ New Desktop Rendering Engine
-➕ Beveled look and feel
-➕ New Icons
-➕ New data.ini location
-➖ Removed Terminal
