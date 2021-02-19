@@ -49,6 +49,21 @@ body {
     padding: 5px
 }
 
+.bevel-button {
+    border-radius: 29px;
+    background: linear-gradient(145deg, #e7f1fa, #c2cbd3);
+    box-shadow:  4px 4px 6px var(--bevel-dark),
+                -4px -4px 6px var(--bevel-light);
+    padding: 11px;
+    border: none;
+    outline: none;
+}
+.bevel-button:focus {
+    background: linear-gradient(145deg, #c2cbd3, #e7f1fa);
+    box-shadow:  4px 4px 6px var(--bevel-dark),
+                -4px -4px 6px var(--bevel-light);
+}
+
 .left { float: left; }
 .right { float: right; }
 .center { 
