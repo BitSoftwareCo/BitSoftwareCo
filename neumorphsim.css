@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 :root {
     --background-main: #d8e1ea;   
@@ -14,7 +14,7 @@
 body {
     background: var(--background-main);
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #001f3f;
 
     margin: 25px;
