@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://use.typekit.net/mos2klc.css");
 
 :root {
     --background-main: #d8e1ea;   
@@ -14,7 +14,9 @@
 body {
     background: var(--background-main);
 
-    font-family: 'Nunito', sans-serif;
+    font-family: tenon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #001f3f;
 
     margin: 25px;
