@@ -1,0 +1,15 @@
+Supported Platforms:
+- Windows 
+- MacOS
+- Linux
+
+Unsupported Platforms:
+- ChromeOS
+- Andriod
+- iOS
+- iPadOS
+- WatchOS
+
+Needed Software
+- Python 3.9.1
+

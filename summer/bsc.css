@@ -1,0 +1,64 @@
+@import url("https://use.typekit.net/mos2klc.css");
+
+:root {
+    --bsc-blue-1: #1D68F5;
+    --bsc-blue-2: #0F40EB;
+    --bsc-blue-3: #0B32B7;
+
+    --bsc-white-1: #d8e1ea;
+    --bsc-white-2: #ced6df;
+    --bsc-white-3: #b6bec7;
+}
+
+body {
+    background: var(--bsc-white-1);
+
+    font-family: tenon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #001f3f;
+
+    margin: 25px;
+}
+
+.bevel { 
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.center { 
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.blue-1 { background: var(--bsc-blue-1) }
+.blue-2 { background: var(--bsc-blue-2) }
+.blue-3 { background: var(--bsc-blue-3) }
+
+.white-1 { background: var(--bsc-white-1) }
+.white-2 { background: var(--bsc-white-2) }
+.white-3 { background: var(--bsc-white-3) }
+
+
+button {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+
+    background: var(--bsc-blue-2);
+    color: white;
+}
+button:hover {
+    background: var(--bsc-blue-1);
+    color: white;
+}
+button:active {
+    background: var(--bsc-blue-3);
+    color: white;
+}
+
+a { color: #144f8a; }
+a:hover { color: #3074b8; }
