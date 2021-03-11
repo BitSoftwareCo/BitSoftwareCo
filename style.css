@@ -1,0 +1,74 @@
+@import url("https://use.typekit.net/mos2klc.css");
+
+:root {
+    --background-main: #292E39;   
+
+    --main-color: #7FB5C3;
+    --main-color-light: #86C0CF;
+    --main-color-dark: #557982;
+}
+
+body {
+    background: var(--background-main);
+
+    font-family: tenon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8F9FB;
+
+    margin: 25px;
+}
+
+.bevel {
+    border-radius: 50px;
+    background: #292E39;
+    box-shadow:  6px 6px 12px #232730,
+                 -6px -6px 12px #2f3542;
+    padding: 5px;
+}
+.bevel-concave {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #252933, #2c313d);
+    box-shadow:  6px 6px 12px #232730,
+                -6px -6px 12px #2f3542;
+    padding: 5px;
+}
+.bevel-convex {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #2c313d, #252933);
+    box-shadow:  6px 6px 12px #232730,
+                 -6px -6px 12px #2f3542;
+    padding: 5px;
+}
+.bevel-inset {
+    border-radius: 50px;
+    background: #292E39;
+    box-shadow: inset 6px 6px 12px #232730,
+                inset -6px -6px 12px #2f3542;
+    padding: 5px
+}
+
+.left { float: left; }
+.right { float: right; }
+.center { 
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.circle { border-radius: 50%; }
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+a:hover {
+    color: var(--main-color-light);
+}
+
+/* Other */
+.logo a {
+    color: #f8f9fb;
+    font-weight: bold;
+    font-size: 95px;
+}
