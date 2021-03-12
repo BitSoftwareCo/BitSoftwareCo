@@ -19,28 +19,28 @@ body {
 }
 
 .bevel {
-    border-radius: 32px;
+    border-radius: 26px;
     background: #2E3440;
     box-shadow:  5px 5px 10px #272c36,
                  -5px -5px 10px #353c4a;
     padding: 5px;
 }
 .bevel-concave {
-    border-radius: 32px;
+    border-radius: 26px;
     background: linear-gradient(145deg, #292f3a, #313844);
     box-shadow:  5px 5px 10px #272c36,
                  -5px -5px 10px #353c4a;
     padding: 5px;
 }
 .bevel-convex {
-    border-radius: 32px;
+    border-radius: 26px;
     background: linear-gradient(145deg, #313844, #292f3a);
     box-shadow:  5px 5px 10px #272c36,
                  -5px -5px 10px #353c4a;
     padding: 5px;
 }
 .bevel-inset {
-    border-radius: 32px;
+    border-radius: 26px;
     background: #2E3440;
     box-shadow: inset 5px 5px 10px #272c36,
                 inset -5px -5px 10px #353c4a;;
