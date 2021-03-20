@@ -71,3 +71,16 @@ a:hover {
     font-weight: bold;
     font-size: 95px;
 }
+
+/* Doc */
+.doc { 
+    width: 50%; 
+    padding: 25px;
+}
+
+@media only screen and (max-width: 696px) {
+    .doc { 
+        width: 91%; 
+        padding: 13px;
+    }   
+}
