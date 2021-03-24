@@ -2,19 +2,18 @@
 
 :root {
     --background-1: #000000;
-    --background-2: #262626;
-    --background-3: #4C4C4C;
+    --background-2: #1C1C1E;
 
     --main-1: #FFFFFF;
     --main-2: #CCCCCC;
     --main-3: #999999;
 
-    --accent-1: #1984FF;
-    --accent-2: #1874FF;
-    --accent-3: #1864FF;
+    --accent-1: #0A84FF;
+    --accent-2: #0963FF;
+    --accent-3: #0842FF;
 
-    --link-1: #96b4d7;
-    --link-2: #96b4d7;
+    --link-1: #4da6ff;
+    --link-2: #238ef8;
 }
 
 html {
