@@ -27,7 +27,6 @@ body {
 }
 
 .bevel {
-    border-radius: 25px;
     border: 5px solid var(--background-2);
     padding: 5px;
 }
@@ -39,8 +38,12 @@ body {
     display: block;
     margin: auto;
 }
-
 .circle { border-radius: 50%; }
+
+img {
+    max-width: 960px;
+    width: 100%;
+}
 
 a {
     text-decoration: none;
