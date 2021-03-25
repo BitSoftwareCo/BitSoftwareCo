@@ -2,18 +2,15 @@
 
 :root {
     --background-1: #000000;
-    --background-2: #1C1C1E;
+    --background-2: #333333;
 
     --main-1: #FFFFFF;
     --main-2: #CCCCCC;
     --main-3: #999999;
 
-    --accent-1: #0A84FF;
-    --accent-2: #0963FF;
-    --accent-3: #0842FF;
-
-    --link-1: #4da6ff;
-    --link-2: #238ef8;
+    --accent-1: #ADD8FF;
+    --accent-2: #80B9EE;
+    --accent-3: #559CE4;
 }
 
 html {
@@ -47,10 +44,10 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--link-1);
+    color: var(--accent-1);
 }
 a:hover {
-    color: var(--link-2);
+    color: var(--accent-2);
 }
 
 /* Other */
