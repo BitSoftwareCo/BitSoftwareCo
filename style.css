@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-    --background-1: #000000;
-    --background-2: #333333;
-    --background-3: #525151;
+    --background-1: #090C10;
+    --background-2: #1e2836;
 
     --main-1: #FFFFFF;
     --main-2: #CCCCCC;
     --main-3: #999999;
 
-    --accent-1: #ADD8FF;
-    --accent-2: #80B9EE;
-    --accent-3: #559CE4;
+    --accent-1: #4E94E4;
+    --accent-2: #3C72B1;
 }
 
 html {
@@ -22,6 +20,7 @@ body {
     background: var(--background-1);
 
     font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
     color: var(--main-1);
 
     margin: 25px;
@@ -34,8 +33,7 @@ body {
 
 .left { float: left; }
 .right { float: right; }
-.center { 
-    text-align: center;
+.center {
     display: block;
     margin: auto;
 }
@@ -59,6 +57,8 @@ a:hover {
     color: var(--main-1);
     font-weight: bold;
     font-size: 95px;
+    text-align: center;
+    line-height: 1;
 }
 
 /* Doc */
@@ -66,6 +66,11 @@ a:hover {
     width: 50%; 
     padding: 25px;
 }
+
+/* Display Text */
+.header {
+    text-align: center;
+} 
 
 @media only screen and (max-width: 696px) {
     .doc { 
