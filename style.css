@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 :root {
     --background-1: #090C10;
@@ -19,7 +19,7 @@ html {
 body {
     background: var(--background-1);
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 30px;
     color: var(--main-1);
 
