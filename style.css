@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 :root {
-    --background-1: #090C10;
-    --background-2: #1e2836;
+    --background-1: #171A1D;
+    --background-2: #1D2125;
+    --background-3: #24292E;
 
-    --main-1: #C9D1D9;
-    --main-2: #CCCCCC;
-    --main-3: #999999;
+    --main-1: #FFFFFF;
 
-    --accent-1: #4E94E4;
-    --accent-2: #3C72B1;
+    --accent-1: #0f7fff;
+    --accent-2: #0366D6;
+    --accent-3: #024DA3;
 }
 
 html {
@@ -27,7 +27,7 @@ body {
 }
 
 .bevel {
-    border: 5px solid var(--background-2);
+    border: 5px solid var(--background-3);
     padding: 5px;
 }
 
