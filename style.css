@@ -73,8 +73,12 @@ body {
     display: block;
     margin: auto;
 }
-
 .circle { border-radius: 50%; }
+
+.screenshot {
+    max-width: 960px;
+    width: 100%;
+}
 
 a {
     text-decoration: none;
@@ -83,6 +87,7 @@ a {
 a:hover {
     color: #025eb9;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -96,6 +101,10 @@ html {
     line-height: 1;
 }
 
+.app {
+    width: 100px;
+}
+
 /* Doc */
 .doc { 
     width: 50%; 
@@ -105,7 +114,7 @@ html {
 /* Display Text */
 .header {
     text-align: center;
-} 
+}
 
 @media only screen and (max-width: 696px) {
     .doc { 
