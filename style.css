@@ -1,95 +1,55 @@
-@import url("https://use.typekit.net/mos2klc.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 :root {
-    --background-main: #d8e1ea;   
+    --background-1: #171A1D;
+    --background-2: #1D2125;
+    --background-3: #24292E;
 
-    --bevel-dark: #bebebe;
-    --bevel-light: #ffffff;
+    --main-1: #FFFFFF;
 
-    --main-color: #0F40EB;
-    --main-color-light: #1D68F5;
-    --main-color-dark: #0B32B7;
+    --accent-1: #0f7fff;
+    --accent-2: #0366D6;
+    --accent-3: #024DA3;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background: var(--background-main);
+    background: var(--background-1);
 
-    font-family: tenon, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
     line-height: 20px;
-    color: #001f3f;
+    color: var(--main-1);
 
     margin: 25px;
 }
 
 .bevel {
-    border-radius: 29px;
-    background: var(--background-main);
-    box-shadow:  5px 5px 9px var(--bevel-dark),
-                -5px -5px 9px var(--bevel-light);
+    border: 5px solid var(--background-3);
     padding: 5px;
-}
-.bevel-concave {
-    border-radius: 29px;
-    background: linear-gradient(145deg, #c2cbd3, #e7f1fa);
-    box-shadow:  4px 4px 6px var(--bevel-dark),
-                -4px -4px 6px var(--bevel-light);
-    padding: 5px;
-}
-.bevel-convex {
-    border-radius: 29px;
-    background: linear-gradient(145deg, #e7f1fa, #c2cbd3);
-    box-shadow:  4px 4px 6px var(--bevel-dark),
-                -4px -4px 6px var(--bevel-light);
-    padding: 5px;
-}
-.bevel-inset {
-    border-radius: 29px;
-    background: var(--background-main);
-    box-shadow: inset 4px 4px 6px var(--bevel-dark),
-                inset -4px -4px 6px var(--bevel-light);
-    padding: 5px
-}
-
-.bevel-button {
-    border-radius: 29px;
-    background: linear-gradient(145deg, #e7f1fa, #c2cbd3);
-    box-shadow:  4px 4px 6px var(--bevel-dark),
-                -4px -4px 6px var(--bevel-light);
-    padding: 11px;
-    border: none;
-    outline: none;
-}
-.bevel-button:focus {
-    background: linear-gradient(145deg, #c2cbd3, #e7f1fa);
-    box-shadow:  4px 4px 6px var(--bevel-dark),
-                -4px -4px 6px var(--bevel-light);
 }
 
 .left { float: left; }
 .right { float: right; }
-.center { 
+.center {
     display: block;
     margin: auto;
 }
 .circle { border-radius: 50%; }
 
-.screenshot {
+img {
     max-width: 960px;
     width: 100%;
 }
 
 a {
     text-decoration: none;
-    color: #003870;
+    color: var(--accent-1);
 }
 a:hover {
-    color: #025eb9;
-}
-
-html {
-    scroll-behavior: smooth;
+    color: var(--accent-2);
 }
 
 /* Other */
@@ -101,8 +61,9 @@ html {
     line-height: 1;
 }
 
-.app {
-    width: 100px;
+.screenshot {
+    max-width: 960px;
+    width: 100%;
 }
 
 /* Doc */
@@ -114,7 +75,7 @@ html {
 /* Display Text */
 .header {
     text-align: center;
-}
+} 
 
 @media only screen and (max-width: 696px) {
     .doc { 
