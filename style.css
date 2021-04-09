@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url("https://use.typekit.net/mos2klc.css");
 
 :root {
     --background-1: #171A1D;
@@ -19,8 +19,10 @@ html {
 body {
     background: var(--background-1);
 
-    font-family: 'Inter', sans-serif;
-    line-height: 20px;
+    font-family: niveau-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 25px;
     color: var(--main-1);
 
     margin: 25px;
