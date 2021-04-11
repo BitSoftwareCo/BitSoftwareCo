@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    /* Background*/
+    --bg-0: #090C10;
+    --bg-1: #0D131B;
+    --bg-2: #152437;
+    /* Foreground */
+    --fg-0: #FFFFFF;
+    --fg-1: #CCCCCC;
+    --fg-2: #999999;
+    /* Main */
+    --main-0: #278BFF;
+    --main-1: #1B6ECF;
+    --main-2: #1A549A;
+    /* Border Radius */
+    --br-0: 6px;
+    --br-1: 12px;
+    --br-2: 18px;
+    --br-3: 24px;
+    /* Padding */
+    --p-0: var(--br-0);
+    --p-1: var(--br-1);
+    --p-2: var(--br-2);
+    --p-3: var(--br-3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-0);
+
+    font-family: 'Inter', sans-serif;
+    line-height: 25px;
+    color: var(--fg-0);
+}
+
+/* Buttons */
+button, input[type=button], input[type=submit] {
+    background: var(--main-0);
+    color: var(--fg-0);
+
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: var(--br-0);
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+}
+button:hover, input[type=button]:hover, input[type=submit]:hover {
+    background:var(--main-1);
+}
+button:active, input[type=button]:active, input[type=submit]:active {
+    background:var(--main-2);
+}
+
+/* Input */
+input[type=text], input[type=password] {
+    border: 2px solid var(--main-0);
+    border-radius: var(--br-0);
+
+    background: var(--bg-0);
+    color:var(--fg-0);
+    padding: 10px;
+    
+    outline: none;
+
+    cursor: text;
+}
+input[type=text]:hover, input[type=password]:hover {
+    border-color: var(--main-1);
+}
+input[type=text]:active, input[type=password]:active {
+    border-color: var(--main-2);
+}
+
+/* Hyperlink */
+a {
+    color: var(--main-0);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--main-1);
+}
+a:active {
+    color: var(--main-2);
+}
+
+/* Depth */
+.depth-1 {
+    background: var(--bg-1);
+    display: block;
+}
+.depth-2 {
+    background: var(--bg-2);
+    display: block;
+}
+
+/* Border Radius */
+.br-0 {
+    border-radius: var(--br-0);
+}
+.br-1 {
+    border-radius: var(--br-1);
+}
+.br-2 {
+    border-radius: var(--br-2);
+}
+.br-3 {
+    border-radius: var(--br-3);
+}
+
+/* Padding */
+.p-0 {
+    padding: var(--p-0);
+}
+.p-1 {
+    padding: var(--p-1);
+}
+.p-2 {
+    padding: var(--p-2);
+}
+.p-3 {
+    padding: var(--p-3);
+}
+
+/* Center */
+.text-center {
+    text-align: center;
+}
+.center {
+    display: block;
+    margin: auto;
+}
+
+/* Document */
+.doc {
+    width: 50%; 
+    padding: var(--p-3);
+}
+
+/* Mobile */
+@media only screen and (max-width: 696px) {
+    .doc { 
+        width: 91%; 
+        padding: 13px;
+    }   
+}
