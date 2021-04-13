@@ -8,67 +8,6 @@
     <link rel="icon" href="res/icon.png">
     <link rel="stylesheet" href="https://bitsoftwareco.github.io/BSC-Styles/styles/abyss.css">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .products {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 0px 0px;
-            grid-template-areas:
-                "product-2 product-3";
-            padding-bottom: 64px;
-        }
-        .product-1 { grid-area: product-1; }
-        .product-2 { grid-area: product-2; }
-        .product-3 { grid-area: product-3; }
-        .product-1, .product-2, .product-3 {
-            width: 66%;
-            height: 66%;
-            padding: 32px;
-        }
-
-        .community {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 0px 0px;
-            grid-template-areas:
-                "community-1 community-2";
-        }
-        .community-1 { grid-area: community-1; }
-        .community-2 { grid-area: community-2; }
-        .community-1, .community-2 {
-            width: 66%;
-            height: 66%;
-            padding: 32px;
-        }
-
-        @media only screen and (max-width: 821px) {
-            .products {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-                gap: 53px 0px;
-                grid-template-areas:
-                    "product-2"
-                    "product-3";
-            }
-
-            .community {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-                gap: 53px 0px;
-                grid-template-areas:
-                    "community-1"
-                    "community-2";
-                padding-bottom: 82px;
-            }
-        }
-
-        .app { width: 50px }
-    </style>
 </head>
 <body>
     <nav style="text-align: center;">
@@ -77,34 +16,75 @@
         </div>
     </nav>
 
-    <main style="text-align: center; padding-top: 50px;">
-        <h1>Products</h1>
-        <div class="products">
-            <div class="br-3 p-3 depth-1 product-2 center">
-                <h2>BSC Applications</h2>
-                <p>Doing more in Less.</p>
-                <a href="app/BSC-Applications.html">Learn More</a>
-            </div>
-    
-            <div class="br-3 p-3 depth-1 product-3 center">
-                <h2>BSC Styles</h2>
-                <p>Spice things up with these amazing CSS Styles.</p>
-                <a href="">Coming Soon!</a>
+    <main style="padding-top: 50px;">
+        <h1 style="max-width: 445px" class="text-center center header">Some of the Best things comes from BSC</h1>
+        <h3 style="max-width: 649px" class="text-center center sub-header">
+            We believe in making software easy, and reliable. With our software you can be
+            reassured that you are in good hands. Updates, support, reliability are just
+            some things that we bring with our software.
+        </h3>
+
+        <div style="max-width: 649px; margin-top: 100px" class="center">
+            <h2 class="title text-center">Software</h2>
+
+            <div>
+                <div id="bsc-applications">
+                    <div style="padding: 5px">
+                        <img src="res/BSC Applications.svg" alt="BSC Applications Icon" style="width: 50px">
+                    </div>
+                    <div style="padding: 5px">
+                        <h2 class="light">BSC Applications</h2>
+                        <h3 class="sub-title">
+                            Clean and New. The new BSC Applications reflects what our design language is. With the frosted glass background,
+                            Simple yet bold titles, and Amazing use of colors. BSC Applications is stunning compared to other windows software.
+                        </h3>
+                        <button onclick="location.href='app/BSC-Applications.html';">Learn More</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="bsc-styles">
+                    <div style="padding: 5px">
+                        <img src="res/Unknown.svg" alt="BSC Styles Icon" style="width: 50px">
+                    </div>
+                    <div style="padding: 5px">
+                        <h2 class="light">BSC Styles</h2>
+                        <h3 class="sub-title">
+                            Spice things Up. With BSC Styles you can focus on the HTML of your website. Out with the days of fighting CSS and in
+                            with the days of fast website creation.
+                        </h3>
+                        <button class="secondary">Coming Soon!</button>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <h1>Community</h1>
-        <div class="community">
-            <div class="br-3 p-3 depth-1 community-1 center">
-                <h2>GitHub</h2>
-                <p>Give Feedback about our software.</p>
-                <a href="https://github.com/BitSoftwareCo" target="_blank">Go to GitHub</a>
-            </div>
+        <div style="max-width: 649px; margin-top: 100px" class="center">
+            <h2 class="title text-center">Community</h2>
 
-            <div class="br-3 p-3 depth-1 depth-1 community-2 center">
-                <h2>Instagram</h2>
-                <p>Hear about the newist products and changes to existing ones.</p>
-                <a href="https://www.instagram.com/bit.software.co/" target="_blank">Go to Instagram</a>
+            <div>
+                <div id="instagram">
+                    <div style="padding: 5px">
+                        <h2 class="light">Instagram</h2>
+                        <h3 class="sub-title">
+                            Hear about new software and updates and changes to existing ones.
+                        </h3>
+                        <a href="https://www.instagram.com/bit.software.co/" target="_blank">Go to Instagram</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="github">
+                    <div style="padding: 5px">
+                        <h2 class="light">GitHub</h2>
+                        <h3 class="sub-title">
+                            View our open source products and help develop them.
+                        </h3>
+                        <a href="https://github.com/BitSoftwareCo" target="_blank">Go to GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
