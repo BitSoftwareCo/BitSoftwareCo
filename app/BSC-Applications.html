@@ -8,6 +8,25 @@
 
     <link rel="icon" href="../res/icon.png">
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .Notes {
+            color: var(--blue-light);
+        }
+        .Phone-Book {
+            color: var(--green-light);
+        }
+        .Photo-View {
+            color: var(--red-light);
+        }
+        .Todo {
+            color: var(--orange-light);
+        }
+
+        #Notes, #Phone-Book, #Photo-View, #Todo {
+            padding-top: 55px;
+        }
+    </style>
 </head>
 <body>
     <nav style="text-align: center;">
@@ -30,10 +49,77 @@
             </button>
         </div>
         
-        <img class="screenshot center" src="res/BSC-Applications/Home.png" alt="Home">
-        <img class="screenshot center" src="res/BSC-Applications/Phone Book.png" alt="Phone Book">
-        <img class="screenshot center" src="res/BSC-Applications/Photo View.png" alt="Photo View">
-        <img class="screenshot center" src="res/BSC-Applications/Todo.png" alt="Todo">
+        <div class="center" style="max-width: 649px; margin-top: 100px">
+            <h1 class="title text-center">Get More done with Less Clicks</h1>      
+            <h3 class="sub-title text-center">
+                BSC Applications brings side pane navigation. With this you can navigate from task to task faster.
+            </h3>            
+
+            <div id="Notes">
+                <h1 class="title Notes">Notes</h1>
+
+                <hr>
+
+                <h3 class="sub-title">
+                    <span class="Notes">Rich Text</span>, Save and Edit Rich Text Files(RTF) with ease.
+                </h3>
+                <h3 class="sub-title">
+                    <span style="color: var(--fg-2);">Plain Text</span>, Yes! You can save your rich text document as Plain Text. BSC Applications
+                    will convert any formated text to Plain Text and save it. You can also open Plain Text.
+                </h3>
+                <h3 class="sub-title">
+                    <span class="Notes">Images</span>, Copy and Paste images into your notes to add a bit of flare. Your image will remain in the
+                    note even if the source file is deleted.
+                </h3>
+                <h3 class="sub-title">
+                    <span class="Notes">Spell Check</span>, Don't worry about spelling every word correctly. Notes will check your spelling
+                    as you type and offer the correct spelling when right clicked.
+                </h3>
+            </div>
+
+            <div id="Phone-Book">
+                <h1 class="title Phone-Book">Phone Book</h1>
+
+                <hr>
+
+                <h3 class="sub-title">
+                    <span class="Phone-Book">Phone Numbers</span>, Gone are the days of looking threw your phones contacts to find a phone number,
+                    and back are the days of simple phone books...well kinda.
+                </h3>
+                <h3 class="sub-title">
+                    <span class="Phone-Book">Small Footprint</span>, No need to worry about size of files when saving a Phone Book.
+                    BA Phone Book files are kept small by removing unnecessary content(Whitespace, New Lines, ect).
+                </h3>
+            </div>
+
+            <div id="Photo-View">
+                <h1 class="title Photo-View">Photo View</h1>
+
+                <hr>
+
+                <h3 class="sub-title">
+                    <span class="Photo-View">Open</span>, Open all of your favorite images with Photo View.
+                </h3>
+                <h3 class="sub-title">
+                    <span class="Photo-View">Copy</span>, When a Photo is open in Photo View you can copy it to your clipboard. Once it is
+                    copied you can even paste it in Notes to add a bit of character to your documents.
+                </h3>
+            </div>
+
+            <div id="Todo">
+                <h1 class="title Todo">Todo</h1>
+
+                <hr>
+
+                <h3 class="sub-title">
+                    <span class="Todo">Tasks</span>, Never forget a task again with Todo. Open, Complete, and Save todo lists.
+                </h3>
+                <h3 class="sub-title">
+                    <span class="Todo">Small Footprint(Again)</span>, Just like Phone Book, Todo saves all of your uncompleted tasks in a
+                    clean and compact form.
+                </h3>
+            </div>
+        </div>
     </main>
 </body>
 </html>
