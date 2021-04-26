@@ -3,17 +3,17 @@
 
 :root {
     /* Background*/
-    --bg-0: #000000;
-    --bg-1: #292929;
-    --bg-2: #4e4e4e;
+    --bg-0: #FFFFFF;
+    --bg-1: #CCCCCC;
+    --bg-2: #999999;
     /* Foreground */
-    --fg-0: #FFFFFF;
-    --fg-1: #CCCCCC;
-    --fg-2: #999999;
+    --fg-0: hsl(0, 0%, 10%);
+    --fg-1: hsl(0, 0%, 20%);
+    --fg-2: hsl(0, 0%, 30%);;
     /* Main */
-    --main-0: #0071e3;
-    --main-1: #0564c2;
-    --main-2: #034b92;
+    --main-0: hsl(210, 100%, 45%);
+    --main-1: hsl(210, 100%, 35%);
+    --main-2: hsl(210, 100%, 25%);
     /* Border Radius */
     --br-0: 6px;
     --br-1: 12px;
@@ -78,7 +78,7 @@ p, a, label {
 /* Buttons */
 button, input[type=button], input[type=submit] {
     background: var(--main-0);
-    color: var(--fg-0);
+    color: var(--bg-0);
 
     padding: 10px;
     padding-left: 15px;
@@ -101,6 +101,7 @@ button:active, input[type=button]:active, input[type=submit]:active {
 button.secondary, input[type=button].secondary, input[type=submit].secondary {
     border: 2px solid var(--main-0) !important;
     background: var(--bg-0) !important;
+    color: var(--fg-0) !important;
 }
 button.secondary:hover, input[type=button].secondary:hover, input[type=submit].secondary:hover {
     border-color: var(--main-1) !important;
@@ -128,6 +129,27 @@ input[type=text]:hover, input[type=password]:hover {
     border-color: var(--main-1);
 }
 input[type=text]:active, input[type=password]:active {
+    border-color: var(--main-2);
+}
+
+/* Combobox */
+select {
+    background: var(--bg-0);
+    color: var(--fg-0);
+
+    border: 2px solid var(--main-0);
+    border-radius: var(--br-0);
+
+    padding: var(--p-0);
+
+    outline: none;
+
+    cursor: pointer;
+}
+select:hover {
+    border-color: var(--main-1);
+}
+select:active {
     border-color: var(--main-2);
 }
 
@@ -210,6 +232,7 @@ a:active {
 }
 hr {
     color: var(--fg-0);
+    background: var(--fg-0);
     margin-top: 35px;
     margin-bottom: 35px;
 }
