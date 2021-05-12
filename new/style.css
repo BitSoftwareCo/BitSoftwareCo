@@ -9,6 +9,7 @@ body {
 header {
     background: #0d1117eb  !important;
     backdrop-filter: saturate(180%) blur(20px) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
 }
 
 .center {

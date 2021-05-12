@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="../style.css">
 </head>
-<body class="text-white" style="background: #0D1117">
+<body class="text-white" style="background: rgb(13,17,23);
+                                background: linear-gradient(180deg, rgba(13,17,23,1) 0%, rgba(35,43,57,1) 100%);">
     <header class="site-header sticky-top py-1 shadow">
         <nav class="container d-flex flex-column flex-md-row justify-content-between
                     navbar navbar-expand-lg navbar-dark">
@@ -29,19 +30,50 @@
     </header>
 
     <main class="p-3 p-md-5 m-md-3">
-        <div class="position-relative text-center text-black">
+        <div class="position-relative text-center text-black" style="padding-bottom: 50px">
             <h1 class="header">Doing more in Less Clicks.</h1>
             <h2 class="sub-header p-2" style="color: #ffffffad">BSC Applications</h2>
             <div class="btn-group p-3" role="group">
-                <a type="button" class="btn btn-light" onclick="window.open('https://github.com/BitSoftwareCo/BSC-Applications/releases/download/0.2.2/BSC.Applications.zip'); location.href='../docs/BSC-Applications.html#install';">
+                <a class="btn btn-light" onclick="window.open('https://github.com/BitSoftwareCo/BSC-Applications/releases/download/0.2.2/BSC.Applications.zip'); location.href='../docs/BSC-Applications.html#install';">
                     Download
                 </a>
-                <a type="button" class="btn btn-outline-light" href="../changelog/BSC-Applications.html">
+                <a class="btn btn-outline-light" href="../changelog/BSC-Applications.html">
                     Change Log
                 </a>
-                <a type="button" class="btn btn-outline-light" href="https://github.com/bitsoftwareco/BSC-Applications" target="_blank">
+                <a class="btn btn-outline-light" href="https://github.com/bitsoftwareco/BSC-Applications" target="_blank">
                     GitHub
                 </a>
+            </div>
+
+            <a href="../system-requirements/bsc-applications.txt" target="_blank" class="center">System Requirements</a>
+        </div>
+
+        <div class="center">
+            <img src="../image/bsc-applications/Home.png" alt="BSC Applications Home" class="img-fluid shadow center">
+
+            <div class="row flex-lg-row-reverse align-items-center" style="padding-top: 150px">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="../image/bsc-applications/Notes.png" alt="BSC Applications Notes" class="img-fluid shadow center">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Notes</h1>
+                    <p class="lead">
+                        Quickly jot down information in formatted text. Notes remembers what you typed so when you navigate to another app
+                        you can be reassured that your document is still there. Notes also spell checks every <span style="border-bottom: 1px dotted red"><s>wird</s></span> 
+                        <i>word</i> you type.
+                    </p>
+                </div>
+            </div>
+            <div class="row flex-rg-row-reverse align-items-center" style="padding-top: 100px">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="../image/bsc-applications/Photo_View.png" alt="BSC Applications Notes" class="img-fluid shadow center">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Photo View</h1>
+                    <p class="lead">
+                        View and Copy all of your favorite family photos with Photo View. 
+                    </p>
+                </div>
             </div>
         </div>
     </main>
