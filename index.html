@@ -1,99 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSC</title>
 
-    <link rel="icon" href="res/icon.png">
+    <meta name="Description" content="BSC Applications makes multiuse modern, clean, & private." />
+	<meta property="og:title" content="BSC Applications" />
+	<meta property="og:description" content="BSC Applications makes multiuse modern, clean, & private." />
+	<meta property="og:site_name" content="BSC" />
+	<meta property="og:type" content="website" />
+
+    <title>BSC Applications | BSC</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/icon.png">
+
+    <style>
+        :root {
+            --spacing: 200px;
+        }
+    </style>
 </head>
-<body>
-    <nav style="text-align: center;">
-        <div class="center logo">
-            <a href="index.html">BSC</a>
-        </div>
-    </nav>
 
-    <main style="padding-top: 50px;">
-        <h1 style="max-width: 445px" class="text-center center header">Some of the Best things comes from BSC</h1>
-
-        <div style="max-width: 649px; margin-top: 100px" class="center">
-            <h2 class="title text-center">Software</h2>
-
-            <div>
-                <div id="bsc-applications">
-                    <div style="padding: 5px">
-                        <img src="res/BSC Applications.svg" alt="BSC Applications Icon" style="width: 50px">
-                    </div>
-                    <div style="padding: 5px">
-                        <h2 class="light">BSC Applications</h2>
-                        <h3 class="sub-title">
-                            Clean your workflow with BSC Applications.
-                        </h3>
-                        <button onclick="location.href='app/BSC-Applications.html';">
-                            Learn More
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div id="bsc-styles">
-                    <div style="padding: 5px">
-                        <img src="res/Unknown.svg" alt="BSC Styles Icon" style="width: 50px">
-                    </div>
-                    <div style="padding: 5px">
-                        <h2 class="light">BSC Styles</h2>
-                        <h3 class="sub-title">
-                            Create amazing websites without needing to touch CSS.
-                        </h3>
-                        <button class="secondary">Coming Soon!</button>
+<body style="background: hsl(0, 0%, 6%); color: #FFFFFF">
+    <header class="site-header sticky-top py-1 header-dark" style="background: rgba(15, 15, 15, 0.65);">
+        <nav class="container d-flex flex-column flex-md-row justify-content-between
+                    navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">BSC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="changelog/BSC-Applications.html">Change Log</a>
+                        <a class="nav-link" href="docs/BSC-Applications.html">Docs</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
+    </header>
 
-        <div style="max-width: 649px; margin-top: 100px" class="center">
-            <h2 class="title text-center">Community</h2>
+    <main class="container" style="margin-top: 100px">
+        <section class="text-center" style="margin-bottom: var(--spacing)">
+            <h1 class="display-3">Native. Private.<br>And Open.</h1>
+            <h2 class="sub-header p-2" style="color: #ffffffad">BSC Applications</h2>
 
-            <div>
-                <div id="instagram">
-                    <div style="padding: 5px">
-                        <h2 class="light">
-                            <i class="bi bi-instagram"></i>
-                            Instagram
-                        </h2>
-                        <h3 class="sub-title">
-                            Hear about new software and updates and changes to existing ones.
-                        </h3>
-                        <a href="https://www.instagram.com/bit.software.co/" target="_blank">
-                            Go to Instagram
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                    </div>
+            <div class="btn-group align-items-center mb-5" role="group" aria-label="Basic example">
+                <button class="btn btn-light" onclick="window.open('https://github.com/BitSoftwareCo/BSC-Applications/releases/download/1.0.0/BSC.Applications.zip'); location.href='docs/BSC-Applications.html#install';">Download</button>
+                <a class="btn btn-outline-light" href="https://github.com/bitsoftwareco/bsc-applications" target="_blank">Github</a>
+            </div><br>
+
+            <img src="image/bsc-applications/Home.png" alt="BSC Applications" class="img-fluid shadow center mt-5">
+        </section>
+
+        <section class="align-items-center" style="margin-bottom: var(--spacing);">
+            <h1 class="display-3 text-center">Three Amazing Apps.</h1>
+
+            <div class="row flex-lg-row-reverse align-items-center" style="padding-top: 50px">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="image/bsc-applications/Notes.png" alt="BSC Applications Notes" class="img-fluid shadow center">
                 </div>
+                <div class="col-lg-6" style="padding-top: 20px">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Notes</h1>
+                    <p class="lead">
+                        Quickly jot down information in formatted text. Notes remembers what you typed so when you navigate to another app
+                        you can start right were you left off. 
+                        Notes also spell checks every <span style="border-bottom: 1px dotted red"><s>wird</s></span> <i>word</i> you type.
+                    </p>
+                </div>
+            </div>
 
-                <hr>
+            <div class="row flex-rg-row-reverse align-items-center" style="padding-top: 150px">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="image/bsc-applications/Photo-View.png" alt="BSC Applications Photo View" class="img-fluid shadow center">
+                </div>
+                <div class="col-lg-6" style="padding-top: 20px">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Photo View</h1>
+                    <p class="lead">
+                        Take, Copy, and Open Photos with Photo View. Once you've copied a photo you can paste
+                        it anywhere.
+                    </p>
+                </div>
+            </div>
 
-                <div id="github">
-                    <div style="padding: 5px">
-                        <h2 class="light">
-                            <i class="bi bi-github"></i>
-                            GitHub
-                        </h2>
-                        <h3 class="sub-title">
-                            View our open source products and help develop them.
-                        </h3>
-                        <a href="https://github.com/BitSoftwareCo" target="_blank">
-                            Go to GitHub
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
+            <div class="row flex-lg-row-reverse align-items-center" style="padding-top: 150px">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="image/bsc-applications/Todo.png" alt="BSC Applications Todo" class="img-fluid shadow center">
+                </div>
+                <div class="col-lg-6" style="padding-top: 20px">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Todo</h1>
+                    <p class="lead">
+                        Worry less about remembering things and more about getting things done with Todo. Todo helps organize your 
+                        life with Todo Lists. Save, Open, and Edit Todo Lists on the fly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="align-items-center" style="margin-bottom: var(--spacing);">
+            <h1 class="display-3 text-center">Privacy First.<br>Tracking Never.</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="h-100 p-5 shadow align-items-center container-sm" 
+                            style="background: rgb(4,23,37);
+                                background: linear-gradient(336deg, rgba(4,23,37,1) 0%, rgba(7,43,69,1) 100%); margin-top: 50px; max-width: 405px;">
+                            <h2>Trackers are Weird!</h2>
+                            <p>
+                                We think trackers are weird. So we don't track anything. When you close BSC Applications everything
+                                is deleted exept for your settings.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="h-100 p-5 shadow align-items-center container-sm" 
+                            style="background: rgb(15,14,28);
+                                background: linear-gradient(336deg, rgba(15,14,28,1) 0%, rgba(29,27,54,1) 100%); margin-top: 50px; max-width: 405px;">
+                                <h2>Open Source</h2>
+                                <p>
+                                    See it for your self. BSC Applications is 100% open source, From the backend to the settings UI.
+                                    View, Contribute, and Make it Your Own <a href="https://github.com/bitsoftwareco/bsc-applications" target="_blank">here</a>.
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="h-100 p-5 shadow align-items-center container-sm" 
+                            style="background: rgb(38,8,14);
+                                background: linear-gradient(336deg, rgba(38,8,14,1) 0%, rgba(62,13,23,1) 100%); margin-top: 50px; max-width: 405px;">
+                            <h2>We don't see Anything</h2>
+                            <p>
+                                Rather you are typing a document or changing some settings, we don't see anything!
+                                All data and settings is saved on-device and never reaches it to us.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 </html>

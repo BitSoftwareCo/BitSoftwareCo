@@ -1,259 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
-@import url('color.css');
-
-:root {
-    /* Background*/
-    --bg-0: #FFFFFF;
-    --bg-1: #CCCCCC;
-    --bg-2: #999999;
-    /* Foreground */
-    --fg-0: hsl(0, 0%, 10%);
-    --fg-1: hsl(0, 0%, 20%);
-    --fg-2: hsl(0, 0%, 30%);;
-    /* Main */
-    --main-0: hsl(210, 100%, 45%);
-    --main-1: hsl(210, 100%, 35%);
-    --main-2: hsl(210, 100%, 25%);
-    /* Border Radius */
-    --br-0: 6px;
-    --br-1: 12px;
-    --br-2: 18px;
-    --br-3: 24px;
-    /* Padding */
-    --p-0: var(--br-0);
-    --p-1: var(--br-1);
-    --p-2: var(--br-2);
-    --p-3: var(--br-3);
-}
-
-html {
-    scroll-behavior: smooth;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 body {
-    background: var(--bg-0);
-
-    font-family: 'Inter', sans-serif;
-    color: var(--fg-0);
-
-    margin: 25px;
+    font-family: 'Inter', sans-serif !important;
 }
 
-/* Text */
-.header {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 15px !important;
-}
-.sub-header {
-    font-size: 20px;
-    font-weight: lighter;
-    color: var(--fg-1);
-}
-.title {
-    font-size: 35px;
-    font-weight: 500;
-}
-.sub-title {
-    font-size: 17.5px;
-    font-weight: lighter;
-    color: var(--fg-1);
-}
-.light {
-    font-weight: lighter;
-}
-h1 {
-    line-height: 42px;
-}
-h2 {
-    line-height: 31px;
-}
-h3 {
-    line-height: 29px;
-}
-p, a, label {
-    line-height: 25px;
-}
-
-/* Buttons */
-button, input[type=button], input[type=submit] {
-    background: var(--main-0);
-    color: var(--bg-0);
-
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: var(--br-3);
-
-    border: none;
-
-    outline: none;
-
-    cursor: pointer;
-}
-button:hover, input[type=button]:hover, input[type=submit]:hover {
-    background:var(--main-1);
-}
-button:active, input[type=button]:active, input[type=submit]:active {
-    background:var(--main-2);
-}
-/* Button Secondary */
-button.secondary, input[type=button].secondary, input[type=submit].secondary {
-    border: 2px solid var(--main-0) !important;
-    background: var(--bg-0) !important;
-    color: var(--fg-0) !important;
-}
-button.secondary:hover, input[type=button].secondary:hover, input[type=submit].secondary:hover {
-    border-color: var(--main-1) !important;
-    background: var(--bg-0) !important;
-}
-button.secondary:active, input[type=button].secondary:active, input[type=submit].secondary:active {
-    border-color: var(--main-2) !important;
-    background: var(--bg-0) !important;
-}
-
-/* Input */
-input[type=text], input[type=password] {
-    border: 2px solid var(--main-0);
-    border-radius: var(--br-0);
-
-    background: var(--bg-0);
-    color:var(--fg-0);
-    padding: 10px;
-    
-    outline: none;
-
-    cursor: text;
-}
-input[type=text]:hover, input[type=password]:hover {
-    border-color: var(--main-1);
-}
-input[type=text]:active, input[type=password]:active {
-    border-color: var(--main-2);
-}
-
-/* Combobox */
-select {
-    background: var(--bg-0);
-    color: var(--fg-0);
-
-    border: 2px solid var(--main-0);
-    border-radius: var(--br-0);
-
-    padding: var(--p-0);
-
-    outline: none;
-
-    cursor: pointer;
-}
-select:hover {
-    border-color: var(--main-1);
-}
-select:active {
-    border-color: var(--main-2);
-}
-
-/* Hyperlink */
-a {
-    color: var(--main-0);
-    text-decoration: none;
-}
-a:hover {
-    color: var(--main-1);
-}
-a:active {
-    color: var(--main-2);
-}
-
-/* Depth */
-.depth-1 {
-    background: var(--bg-1);
-    display: block;
-}
-.depth-2 {
-    background: var(--bg-2);
-    display: block;
-}
-
-/* Border Radius */
-.br-0 {
-    border-radius: var(--br-0);
-}
-.br-1 {
-    border-radius: var(--br-1);
-}
-.br-2 {
-    border-radius: var(--br-2);
-}
-.br-3 {
-    border-radius: var(--br-3);
-}
-
-/* Padding */
-.p-0 {
-    padding: var(--p-0);
-}
-.p-1 {
-    padding: var(--p-1);
-}
-.p-2 {
-    padding: var(--p-2);
-}
-.p-3 {
-    padding: var(--p-3);
-}
-
-/* Grid */
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-}
-.grid .item {
-    flex: 1 1 150px;
-}
-
-/* Center */
-.text-center {
-    text-align: center;
-}
-.center {
-    display: block;
-    margin: auto;
-}
-
-/* Document */
-.doc {
-    width: 50%; 
-    padding: var(--p-3);
-}
-
-/* Other */
-.logo a {
-    color: var(--fg-0);
-    font-weight: bold;
-    font-size: 95px;
-    text-align: center;
-    line-height: 1;
-}
-.screenshot {
-    max-width: 960px;
-    width: 100%;
-}
-hr {
-    color: var(--fg-0);
-    background: var(--fg-0);
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
 main {
-    padding-bottom: 50px;
+    margin-bottom: 100px;
 }
 
-/* Mobile */
-@media only screen and (max-width: 696px) {
-    .doc { 
-        width: 91%; 
-        padding: 13px;
-    }   
+.header-light {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    border-style: solid;
+    border-color: #0000001a;
+    border-width: 1px 0;
+}
+
+.header-dark {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-width: 1px 0;
+}
+
+a {
+    text-decoration: none;
 }
