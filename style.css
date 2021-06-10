@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Inter', sans-serif !important;
+    text-shadow:rgba(255, 255, 255, 0.1);
 }
 
 main {
@@ -18,7 +19,6 @@ main {
     border-color: #0000001a;
     border-width: 1px 0;
 }
-
 .header-dark {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -26,6 +26,18 @@ main {
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.1);
     border-width: 1px 0;
+}
+
+.highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, var(--highlight-color) 50%);
+}
+
+.navbar-brand img {
+    margin-bottom: 4px;
+}
+.nav-link {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 a {
