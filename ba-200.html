@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Description" content="BSC Applications makes multiuse modern, clean, & private." />
+	<meta property="og:title" content="BSC Applications" />
+	<meta property="og:description" content="BSC Applications makes multiuse modern, clean, & private." />
+	<meta property="og:site_name" content="Stone Software" />
+	<meta property="og:type" content="website" />
+
+    <title>BSC Applications - Stone Software</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/icon/blue.png">
+
+    <style>
+        :root {
+            --spacing: 200px;
+        }
+    </style>
+</head>
+
+<body style="background: var(--stone-blue-900); color: var(--stone-blue-100)">
+    <header class="site-header sticky-top py-1 header-dark" style="background: #031633a6;">
+        <nav class="container d-flex flex-column flex-md-row justify-content-between
+                    navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/brand/blue.svg" alt="" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="changelog/BSC-Applications.html">Change Log</a>
+                        <a class="nav-link" href="project-you.html">Project You</a>
+                        <a class="nav-link" href="docs/BSC-Applications.html">Docs</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 100px">
+        <section class="text-center" style="margin-bottom: var(--spacing); height: 100%">
+            <h1 class="display-1">Clean. Private.<br>Simple.</h1>
+            <h2 class="sub-header p-2" style="color: #cfe2ffad">BSC Applications 2.0</h2>
+			      <p>Coming Soon...</p>
+            <p>
+                Total days of development: <span id="totalDays">Calculating...</span><br>
+                <a href="https://github.com/BitSoftwareCo/BSC-Applications/releases/download/1.2.0/BSC.Applications.zip">
+                    Download Beta 2
+                </a>
+            </p>
+        </section>
+
+		<section style="margin-bottom: var(--spacing);">
+			<div class="container">
+				<h1>Clean</h1>
+		  </div>
+		</section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+
+<script type = "text/javascript" >
+    const date1 = new Date("03/19/2021");
+    const date2 = new Date();
+
+    const totalDays = document.getElementById("totalDays");
+
+    let Difference_In_Time = date2.getTime() - date1.getTime();
+    let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+    if (Difference_In_Days == "100") totalDays.innerHTML = `<strong>${Difference_In_Days.toString().split(".")[0]}🥳</strong>`;
+    else totalDays.innerHTML = `<strong>${Difference_In_Days.toString().split(".")[0]}</strong>`;
+
+</script>
+</html>

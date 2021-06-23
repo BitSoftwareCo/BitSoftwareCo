@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="https://raw.githubusercontent.com/BitSoftwareCo/BSC-Applications/main/Assets/CurrentVersion/BSC Applications.appinstaller"
+	Version="1.2.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="3406ec64-fd29-4985-8b83-ff38194de670"
+		Version="1.2.0.0"
+		Publisher="CN=jghr"
+		Uri="https://raw.githubusercontent.com/BitSoftwareCo/BSC-Applications/main/Assets/CurrentVersion/BSC Applications_1.2.0.0_Test/BSC Applications_1.2.0.0_x86_x64.msixbundle" />
+	<Dependencies>
+		<Package
+			Name="Microsoft.NET.Native.Framework.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="https://raw.githubusercontent.com/BitSoftwareCo/BSC-Applications/main/Assets/CurrentVersion/BSC Applications_1.2.0.0_Test/Dependencies/x86/Microsoft.NET.Native.Framework.2.2.appx"
+			Version="2.2.29512.0" />
+		<Package
+			Name="Microsoft.NET.Native.Framework.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="https://raw.githubusercontent.com/BitSoftwareCo/BSC-Applications/main/Assets/CurrentVersion/BSC Applications_1.2.0.0_Test/Dependencies/x64/Microsoft.NET.Native.Framework.2.2.appx"
+			Version="2.2.29512.0" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="https://raw.githubusercontent.com/BitSoftwareCo/BSC-Applications/main/Assets/CurrentVersion/BSC Applications_1.2.0.0_Test/Dependencies/x86/Microsoft.NET.Native.Runtime.2.2.appx"
+			Version="2.2.28604.0" />
+		<Package
+			Name="Microsoft.NET.Native.Runtime.2.2"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="https://raw.githubusercontent.com/BitSoftwareCo/BSC-Applications/main/Assets/CurrentVersion/BSC Applications_1.2.0.0_Test/Dependencies/x64/Microsoft.NET.Native.Runtime.2.2.appx"
+			Version="2.2.28604.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="https://raw.githubusercontent.com/BitSoftwareCo/BSC-Applications/main/Assets/CurrentVersion/BSC Applications_1.2.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+			Version="14.0.29231.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="https://raw.githubusercontent.com/BitSoftwareCo/BSC-Applications/main/Assets/CurrentVersion/BSC Applications_1.2.0.0_Test/Dependencies/x86/Microsoft.VCLibs.x86.14.00.appx"
+			Version="14.0.29231.0" />
+	</Dependencies>
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>
