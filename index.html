@@ -19,7 +19,8 @@
 
     <style>
         :root {
-            --spacing: 200px;
+            --spacing:         200px;
+			--card-background: var(--stone-blue-600);
         }
     </style>
 </head>
@@ -54,14 +55,11 @@
             <h1 class="display-1">Native. Private.<br>And Open.</h1>
             <h2 class="sub-header p-2" style="color: #031633ad">BSC Applications</h2>
             <div class="btn-group align-items-center mb-5" role="group" aria-label="Basic example">
-                <button class="btn btn-primary" onclick="window.open('https://github.com/BitSoftwareCo/BSC-Applications/releases/download/1.0.0/BSC.Applications.zip'); location.href='docs/BSC-Applications.html#install';">Download</button>
+                <a class="btn btn-primary" href="ms-appinstaller:?source=https://bitsoftwareco.github.io/update/bsc-applications/BSC Applications.appinstaller">Install</button>
                 <a class="btn btn-outline-primary" href="https://github.com/bitsoftwareco/bsc-applications" target="_blank">Github</a>
             </div>
             <p>
                 Total days of development: <span id="totalDays">Calculating...</span><br>
-                <a href="https://github.com/BitSoftwareCo/BSC-Applications/releases/download/1.2.0/BSC.Applications.zip">
-                    Download 2.0.0 Beta 2
-                </a>
             </p>
 
             <img src="image/bsc-applications/Home.png" alt="BSC Applications" class="img-fluid shadow center mt-5">
@@ -118,9 +116,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="h-100 p-5 shadow align-items-center container-sm" 
-                            style="background: rgb(4,23,37);
-                                background: linear-gradient(336deg, #121e40 0%, #192649 100%); margin-top: 50px; max-width: 405px;">
-                            <h2>Trackers are Weird!</h2>
+                            style="background: var(--card-background); margin-top: 50px; max-width: 405px;">
+                            <h2>Trackers are weird!</h2>
                             <p>
                                 We think trackers are weird. So we don't track anything. When you close BSC Applications everything
                                 is deleted exept for your settings.
@@ -130,21 +127,19 @@
                     
                     <div class="col">
                         <div class="h-100 p-5 shadow align-items-center container-sm" 
-                            style="background: #285029;
-                                background: linear-gradient(336deg, #285029 0%, #3b753d 100%); margin-top: 50px; max-width: 405px;">
-                                <h2>Open Source</h2>
+                            style="background: var(--card-background); margin-top: 50px; max-width: 405px;">
+                                <h2>Open source</h2>
                                 <p>
                                     See it for your self. BSC Applications is 100% open source, From the backend to the settings UI.
-                                    View, Contribute, and Make it Your Own <a href="https://github.com/bitsoftwareco/bsc-applications" target="_blank">here</a>.
+                                    View, Contribute, and make it your own.
                                 </p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="h-100 p-5 shadow align-items-center container-sm" 
-                            style="background: #50282a;
-                                background: linear-gradient(336deg, #50282a 0%, #753f41 100%); margin-top: 50px; max-width: 405px;">
-                            <h2>We don't see Anything</h2>
+                            style="background: var(--card-background);margin-top: 50px; max-width: 405px;">
+                            <h2>We don't see anything</h2>
                             <p>
                                 Rather you are typing a document or changing some settings, we don't see anything!
                                 All data and settings is saved on-device and never reaches it to us.
