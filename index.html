@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSC Applications Frost / Stone Software</title>
 
-    <meta name="Description" content="BSC Applications makes multiuse modern, clean, & private." />
-	<meta property="og:title" content="BSC Applications" />
-	<meta property="og:description" content="BSC Applications makes multiuse modern, clean, & private." />
-	<meta property="og:site_name" content="Stone Software" />
-	<meta property="og:type" content="website" />
-
-    <title>BSC Applications - Stone Software</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="icon" href="image/icon/blue.png">
+
 
     <style>
         :root {
-            --spacing:         200px;
-			--card-background: var(--stone-blue-600);
+            --background: #CEEAFF;
+            --foreground: #1B3243;
+            --accent: #0078D4;
         }
+
+        section { min-height: 100vh; }
+        section:nth-child(even) { background: #97D2FF; }
+
+        .split-title {
+            margin-bottom: 2rem;
+        }
+
+        .apps { padding: 10rem 0; }
+        .apps .apps-title { margin-bottom: 5rem; }
+        .apps div { margin: 2rem 0; }
+        .apps img {
+            border-radius: 5px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.336);
+        }
+
+        .sysrq h1 { padding-bottom: 3rem; }
     </style>
 </head>
-
-<body style="background: var(--stone-blue-100); color: var(--stone-blue-900)">
-    <header class="site-header sticky-top py-1 header-light" style="background: #cfe2ffa6;">
+<body>
+    <header class="site-header sticky-top py-1 header-light">
         <nav class="container d-flex flex-column flex-md-row justify-content-between
                     navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -41,8 +51,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" href="index.html">Home</a>
-                        <a class="nav-link" href="changelog/BSC-Applications.html">Change Log</a>
-                        <a class="nav-link" href="project-you.html">Project You</a>
+                        <a class="nav-link" href="changelog.html">Changelog</a>
                         <a class="nav-link" href="docs/BSC-Applications.html">Docs</a>
                     </div>
                 </div>
@@ -50,123 +59,154 @@
         </nav>
     </header>
 
-    <main class="container" style="margin-top: 100px">
-        <section class="text-center" style="margin-bottom: var(--spacing)">
-            <h1 class="display-1">Native. Private.<br>And Open.</h1>
-            <h2 class="sub-header p-2" style="color: #031633ad">BSC Applications</h2>
-            <div class="btn-group align-items-center mb-5" role="group" aria-label="Basic example">
-                <a class="btn btn-primary" href="ms-appinstaller:?source=https://bitsoftwareco.github.io/update/bsc-applications/BSC Applications.appinstaller">Install</button>
-                <a class="btn btn-outline-primary" href="https://github.com/bitsoftwareco/bsc-applications" target="_blank">Github</a>
+    <main>
+        <section class="hero vertical-center">
+            <div>
+                <h1 class="hero-title space">Get things done.</h1>
+                <p class="hero-lead space">BSC Applications</p>
+                <a class="btn btn-primary" href="ms-appinstaller:?source=https://bitsoftwareco.github.io/update/bsc-applications/BSC Applications.appinstaller">Install</a>
             </div>
-            <p>
-                Total days of development: <span id="totalDays">Calculating...</span><br>
-            </p>
-
-            <img src="image/bsc-applications/Home.png" alt="BSC Applications" class="img-fluid shadow center mt-5">
         </section>
 
-        <section class="align-items-center" style="margin-bottom: var(--spacing);">
-            <h1 class="display-3 text-center">Three Amazing Apps.</h1>
-
-            <div class="row flex-lg-row-reverse align-items-center" style="padding-top: 50px">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="image/bsc-applications/Notes.png" alt="BSC Applications Notes" class="img-fluid shadow center">
-                </div>
-                <div class="col-lg-6" style="padding-top: 20px">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Notes</h1>
-                    <p class="lead">
-                        Quickly jot down information in formatted text. Notes remembers what you typed so when you navigate to another app
-                        you can start right were you left off. 
-                        Notes also spell checks every <span style="border-bottom: 1px dotted red"><s>wird</s></span> <i>word</i> you type.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row flex-rg-row-reverse align-items-center" style="padding-top: 150px">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="image/bsc-applications/Photo-View.png" alt="BSC Applications Photo View" class="img-fluid shadow center">
-                </div>
-                <div class="col-lg-6" style="padding-top: 20px">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Photo View</h1>
-                    <p class="lead">
-                        Take, Copy, and Open Photos with Photo View. Once you've copied a photo you can paste
-                        it anywhere.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row flex-lg-row-reverse align-items-center" style="padding-top: 150px">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="image/bsc-applications/Todo.png" alt="BSC Applications Todo" class="img-fluid shadow center">
-                </div>
-                <div class="col-lg-6" style="padding-top: 20px">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Todo</h1>
-                    <p class="lead">
-                        Worry less about remembering things and more about getting things done with Todo. Todo helps organize your 
-                        life with Todo Lists. Save, Open, and Edit Todo Lists on the fly.
-                    </p>
+        <section class="support vertical-center">
+            <div class="container">
+                <div class="row flex-rg-row-reverse align-items-center">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="image/bsc-applications-200/support.png" alt="BSC Applications Support" class="img-fluid" style="margin-bottom: 35px;">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="title split-title">Long live the support cycle.</h1>
+                        <p>
+                            We try to support as many versions as posible. 
+                            The current support cycle allows for 10 versions. 
+                                We plan on keeping older versions around as a form of history.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="align-items-center" style="margin-bottom: var(--spacing);">
-            <h1 class="display-3 text-center">Privacy First.<br>Tracking Never.</h1>
+        <section class="privacy vertical-center">
+            <div class="container">
+                <div class="row flex-lg-row-reverse align-items-center">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="image/bsc-applications-200/privacy.png" alt="BSC Applications Privacy" class="img-fluid" style="margin-bottom: 35px;">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="title split-title">Privacy Matters.</h1>
+                        <p>
+                            We think privacy is no joke. 
+                            Everyone deserves privacy and we bake it into BSC Applications. 
+                            Nothing..not even crash reports are sent to us.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="multiuse vertical-center">
+            <div class="container">
+                <div class="row flex-rg-row-reverse align-items-center">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="image/bsc-applications-200/multiuse.png" alt="BSC Applications Multiuse" class="img-fluid" style="margin-bottom: 35px;">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="title split-title">Multi-use to the core.</h1>
+                        <p>
+                            BSC Applications is made of multiple apps that help you get things gone. 
+                            Set todo lists, save rich text files, or view photos in BSC Applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <div class="container" style="color: white;">
-                <div class="row">
-                    <div class="col">
-                        <div class="h-100 p-5 shadow align-items-center container-sm" 
-                            style="background: var(--card-background); margin-top: 50px; max-width: 405px;">
-                            <h2>Trackers are weird!</h2>
+        <section class="apps vertical-center">
+            <div>
+                <h1 class="title text-center apps-title">Meet the apps.</h1>
+
+                <div class="container">
+                    <div class="row flex-lg-row-reverse align-items-center">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="image/bsc-applications-200/mediaview.png" alt="BSC Applications Media View" class="img-fluid" style="margin-bottom: 35px;">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="title split-title">Media View</h1>
                             <p>
-                                We think trackers are weird. So we don't track anything. When you close BSC Applications everything
-                                is deleted exept for your settings.
+                                View and share all of your favorite photos with media view. 
+                                Media View automatically displays all of your picture library, 
+                                so you don't have to do a thing.
                             </p>
                         </div>
                     </div>
-                    
-                    <div class="col">
-                        <div class="h-100 p-5 shadow align-items-center container-sm" 
-                            style="background: var(--card-background); margin-top: 50px; max-width: 405px;">
-                                <h2>Open source</h2>
-                                <p>
-                                    See it for your self. BSC Applications is 100% open source, From the backend to the settings UI.
-                                    View, Contribute, and make it your own.
-                                </p>
+
+                    <div class="row flex-rg-row-reverse align-items-center">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="image/bsc-applications-200/notes.png" alt="BSC Applications Notes" class="img-fluid" style="margin-bottom: 35px;">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="title split-title">Notes</h1>
+                            <p>
+                                Edit, Open and Save rich formatted notes. 
+                                Whether you need to type an essay or study some notes, 
+                                notes has you covered.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="h-100 p-5 shadow align-items-center container-sm" 
-                            style="background: var(--card-background);margin-top: 50px; max-width: 405px;">
-                            <h2>We don't see anything</h2>
+                    <div class="row flex-lg-row-reverse align-items-center">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="image/bsc-applications-200/stopwatch.png" alt="BSC Applications Stopwatch" class="img-fluid" style="margin-bottom: 35px;">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="title split-title">Stopwatch</h1>
                             <p>
-                                Rather you are typing a document or changing some settings, we don't see anything!
-                                All data and settings is saved on-device and never reaches it to us.
+                                Stopwatch lets you count the elapsed time in a clean and simple interface.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row flex-rg-row-reverse align-items-center">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="image/bsc-applications-200/todo.png" alt="BSC Applications Todo" class="img-fluid" style="margin-bottom: 35px;">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="title split-title">Todo</h1>
+                            <p>
+                                Create tasks in a simple user interface with Todo. Todo helps you plan things out before doing them.
                             </p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="price vertical-center">
+            <div class="container">
+                <div class="row flex-lg-row-reverse align-items-center">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="image/bsc-applications-200/price.png" alt="BSC Applications Price" class="img-fluid" style="margin-bottom: 35px;">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="title split-title">At the price of nothing!</h1>
+                        <p>
+                            BSC Applications is 100% free and open source. You can contribute to BSC Applications 
+                            <a href="https://github.com/BitSoftwareCo/BSC-Applications" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sysrq vertical-center">
+            <div>
+                <h1 class="title text-center">System<br>requirements</h1>
+                <p>BSC Applications requires <b>Windows 10 1903</b> or later.</p>
             </div>
         </section>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
-
-    
-<script type = "text/javascript" >
-    const date1 = new Date("03/19/2021");
-    const date2 = new Date();
-
-    const totalDays = document.getElementById("totalDays");
-
-    let Difference_In_Time = date2.getTime() - date1.getTime();
-    let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-
-    if (Difference_In_Days == "100") totalDays.innerHTML = `<strong>${Difference_In_Days.toString().split(".")[0]}🥳</strong>`;
-    else totalDays.innerHTML = `<strong>${Difference_In_Days.toString().split(".")[0]}</strong>`;
-    
-</script>
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </html>
