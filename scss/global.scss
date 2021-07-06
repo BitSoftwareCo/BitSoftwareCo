@@ -5,7 +5,9 @@
  3. Type
  4. Hero
  5. Layout
- 6. Navigation
+ 6. Section
+ 7. Navigation
+ 8. Promo
 */
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css");
@@ -16,8 +18,8 @@
 
 body {
     font-family: 'Inter', sans-serif !important;
-    background: var(--background);
-    color: var(--foreground);
+    background: var(--stone-green-100);
+    color: var(--stone-green-900);
 }
 
 /*
@@ -26,13 +28,17 @@ body {
  ========
 */
 h1 { 
-    font-size: 3rem;
+    font-size: clamp(1rem, 5vw + 1rem, 3rem);
     line-height: 1.1;
 }
 p { 
     opacity: .90;
-    font-size: 25px;
+    font-size: clamp(25px, 5vw + 1px, 1rem);
 }
+
+a { color: var(--stone-green-600); }
+a:hover { color: var(--stone-green-800); }
+a:active { color: var(--stone-green-700); }
 
 .title { font-weight: bold; }
 
@@ -55,6 +61,12 @@ p {
     font-size: 2rem;
     opacity: .692;
     line-height: 1;
+}
+.hero-big {
+    font-size: clamp(3rem, 5vw + 1rem, 5rem);
+    line-height: 1.1;
+    max-width: 443.95px;
+    font-weight: bolder;
 }
 
 /*
@@ -87,6 +99,17 @@ p {
 
 /*
  ========
+ Section 
+ ========
+*/
+section { 
+    padding: 1rem 1rem;
+    min-height: 100vh;
+}
+section:nth-child(even) { background: var(--stone-green-200); }
+
+/*
+ ========
  Navigation 
  ========
 */
@@ -99,7 +122,7 @@ p {
     margin-right: 5px;
 }
 header { 
-    background: var(--background);
+    background: #d1e7dd8e;
 
     &.header-light {
         -webkit-backdrop-filter: blur(10px);
@@ -118,4 +141,14 @@ header {
         border-color: rgba(255, 255, 255, 0.1);
         border-width: 1px 0;
     }
+}
+
+/*
+ ========
+ Promo 
+ ========
+*/
+.window {
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.336);
 }

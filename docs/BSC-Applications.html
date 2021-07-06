@@ -15,11 +15,15 @@
     <title>BSC Applications Docs / Stone Software</title>
 
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="icon" href="../image/icon/black.png">
+    <link rel="icon" href="../image/icon/green.png">
 
     <style>
         :root {
-            --spacing: 200px;
+            --spacing: 100px;
+        }
+
+        .hero-title {
+            margin-bottom: 1.5em;
         }
 
         .center {
@@ -32,20 +36,22 @@
         li {
             color: #131313a6;
             font-weight: lighter !important;
-            font-size: 1.25rem;
+            font-size: clamp(25px, 5vw + 1px, 1rem);
         }
 
         b { color: #131313; }
+
+        .versions { padding-top: 3.5rem; }
     </style>
 </head>
 
-<body style="background: #FFFFFF; color: #131313">
-    <header class="site-header sticky-top py-1 header-light" style="background: #FFFFFFa6;">
+<body>
+    <header class="site-header sticky-top header-light">
         <nav class="container d-flex flex-column flex-md-row justify-content-between
                     navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../image/brand/black.svg" alt="" width="30" height="24">
+                    <img src="../image/brand/green.svg" alt="" width="30" height="24">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -63,135 +69,138 @@
         </nav>
     </header>
 
-    <main class="container" style="margin-top: 100px">
-        <section class="text-center" style="margin-bottom: var(--spacing)">
-            <h1 class="display-5">BSC Applications<br>Documentation.<br></h1>
-            <div class="dropdown center">
-                <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    Index
-                </a>
-              
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="#install">Install</a></li>
-                    <li><a class="dropdown-item" href="#update">Update</a></li>
-                    <li><a class="dropdown-item" href="#shortcuts">Standard Keyboard Shortcuts</a></li>
-                    <li><a class="dropdown-item" href="#tempcontent">Temporary Content</a></li>
-                    <li><a class="dropdown-item" href="#media">Supported Media</a></li>
-                </ul>
+    <main>
+        <section class="text-center hero vertical-center" style="margin-bottom: var(--spacing)">
+            <div>
+                <h1 class="hero-title">Docs</h1>
+                <div class="dropdown center">
+                    <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Index
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#install">Install</a></li>
+                        <li><a class="dropdown-item" href="#update">Update</a></li>
+                        <li><a class="dropdown-item" href="#shortcuts">Standard Keyboard Shortcuts</a></li>
+                        <li><a class="dropdown-item" href="#tempcontent">Temporary Content</a></li>
+                        <li><a class="dropdown-item" href="#media">Supported Media</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section class="center" style="max-width: 649px;">
-            <div id="install" style="margin-bottom: var(--spacing);">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Install</h1>
-				<hr>
-                <p class="lead">
-                    Inorder to install BSC Applications you need to be running Windows 10 1803 or later, and enable <a href="https://docs.microsoft.com/en-us/windows/application-management/sideload-apps-in-windows-10#:~:text=Open%20Settings.,developer%20features%2C%20select%20Sideload%20apps." target="_blank">
-                    sideloading</a> for your PC.
-                </p>
-                <p class="lead hidden">
-					<b>Note:</b> As of 1.2.1 BSC Applications doesn't use the following install methods. <a href="ms-appinstaller:?source=https://bitsoftwareco.github.io/update/bsc-applications/BSC Applications.appinstaller">Install</a>
-				</p>
-                <p class="lead">
-                    Once you've enabled your PC for sideloading we can install BSC Applications!
-                    <ol>
-                        <li><b>Extract "BSC.Applications.zip"</b> - Right click "BSC.Applications.zip" and click "Extract"</li>
-                        <li><b>Open the "BSC Applications" folder</b></li>
-                        <li><b>Run the "Add-AddDevPackage"</b> - Right click "Add-AddDevPackage" and click "Run with Powershell"</li>
-                        <li><b>Run "BSC Applications.appxbundle" and click "Install" / "Reinstall"</b></li>
-                    </ol>
-                </p>
-            </div> 
-
-            <div id="update" style="margin-bottom: var(--spacing);">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Update</h1>
-				<hr>
-				<p class="lead hidden">
-					<b>Note:</b> As of 1.2.1 BSC Applications will auto update in the background. 
-				</p>
-                <p class="lead">
-                    Updating BSC Applications is very simple. Follow the following steps to update BSC Applications to the current
-                    version:
-                    <ol>
-                        <li><b>Go to Settings</b></li>
-                        <li><b>Go to "About"</b></li>
-                        <li><b>Click "Check For Updates"</b></li>
-                        <li><b>Delete BSC Applications</b></li>
-                        <li><b>Follow the <a href="#install">install</a> guide</b></li>
-                        <li>
-                            <b>Import your settings</b>(1.1.0+) - After you have updated go to "Settings" > Import Settings. Go to
-                            the location where you saved your "BSC Applications Settings.json" file.
-                        </li>
-                    </ol>
-                </p>
-            </div>
-
-            <div id="shortcuts" style="margin-bottom: var(--spacing);">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Standard Keyboard Shortcuts</h1>
-				<hr>
-                <p class="lead hidden">
-                    <b>What are Standard Keyboard Shortcuts?</b> - Standard Keyboard Shortcuts are shortcuts for common actions that don't
-                    change. Actions such as Save, Open, and Copy are some Standard Keyboard Shortcuts. Here is the full list of Standard
-                    Keyboard Shortcuts:
-                </p>
-
-                <p class="lead">
-                    <ul>
-                        <li><b>Save</b> - ctrl + s</li>
-                        <li><b>Open</b> - ctrl + o</li>
-                        <li><b>Copy</b> - ctrl + c</li>
-                        <li><b>Paste</b> - ctrl + v</li>
-                        <li><b>New</b> - ctrl + n</li>
-                        <li><b>Remove</b> - delete</li>
-                    </ul>
-                </p>
-            </div>
-
-            <div id="tempcontent" style="margin-bottom: var(--spacing);">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Temporary Content</h1>
-				<hr>
-                <p class="lead hidden">
-                    <b>What is Temporary Content?</b> - Temporary Content is a form of storage used when navigating between
-                    apps. When you go to navigate from app to app BSC Applications stores all of your content, so that
-                    when you come back you can start where you left off.
-                </p>
-
-                <p class="lead">
-                    <ul>
-                        <li>
-                            <b>Disable</b> - To disable Temporary Content go to Settings > Temporary Content. When you
-                            flip the switch to off it will clear and stop saving your Temporary Content.
-                        </li>
-                        <li>
-                            <b>Clear</b> - To clear your Temporary Content go to Settings > Clear. Please note that this
-                            action cannot be undone.
-                        </li>
-                    </ul>
-                </p>
-            </div>
-
-            <div id="media" style="margin-bottom: var(--spacing);">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Supported Media</h1>
-				<hr>
-
-                <p class="lead">
-                    <b>Media View</b>
-                    <p class="badge bg-secondary fw-light">Photos</p>
-                    <ul>
-                        <li><b>bmp</b> 1.3.0+</li>
-                        <li><b>png</b> 1.3.0+</li>
-                        <li><b>jpeg</b> 1.3.0+</li>
-                        <li><b>jpg</b> 1.3.0+</li>
-                    </ul>
-                </p>
-
-                <p class="lead" style="margin-top: 25px;">
-                    <b>Notes</b>
-                    <ul>
-                        <li><b>rtf</b> init+</li>
-                        <li><b>txt</b> 0.2.0+</li>
-                    </ul>
-                </p>
+        <section class="versions">
+            <div style="max-width: 649px;" class="center">
+                <div id="install" style="margin-bottom: var(--spacing);">
+                    <h1 class="title">Install</h1>
+                    <hr>
+                    <p>
+                        Inorder to install BSC Applications you need to be running Windows 10 1803 or later, and enable <a href="https://docs.microsoft.com/en-us/windows/application-management/sideload-apps-in-windows-10#:~:text=Open%20Settings.,developer%20features%2C%20select%20Sideload%20apps." target="_blank">
+                        sideloading</a> for your PC. If you still have problems try installing the <a href="../update/bsc-applications/BSC Applications.cer">certificate</a>(<a href="https://docs.microsoft.com/en-us/windows/application-management/sideload-apps-in-windows-10#:~:text=To%20import%20the%20security%20certificate">how to</a>)
+                    </p>
+                    <p class="hidden">
+                        <b>Note:</b> As of 1.2.1 BSC Applications doesn't use the following install methods. <a href="ms-appinstaller:?source=https://bitsoftwareco.github.io/update/bsc-applications/BSC Applications.appinstaller">Install</a>
+                    </p>
+                    <p>
+                        Once you've enabled your PC for sideloading we can install BSC Applications!
+                        <ol>
+                            <li><b>Extract "BSC.Applications.zip"</b> - Right click "BSC.Applications.zip" and click "Extract"</li>
+                            <li><b>Open the "BSC Applications" folder</b></li>
+                            <li><b>Run the "Add-AddDevPackage"</b> - Right click "Add-AddDevPackage" and click "Run with Powershell"</li>
+                            <li><b>Run "BSC Applications.appxbundle" and click "Install" / "Reinstall"</b></li>
+                        </ol>
+                    </p>
+                </div> 
+    
+                <div id="update" style="margin-bottom: var(--spacing);">
+                    <h1 class="title">Update</h1>
+                    <hr>
+                    <p class="hidden">
+                        <b>Note:</b> As of 1.2.1 BSC Applications will auto update in the background. 
+                    </p>
+                    <p>
+                        Updating BSC Applications is very simple. Follow the following steps to update BSC Applications to the current
+                        version:
+                        <ol>
+                            <li><b>Go to Settings</b></li>
+                            <li><b>Go to "About"</b></li>
+                            <li><b>Click "Check For Updates"</b></li>
+                            <li><b>Delete BSC Applications</b></li>
+                            <li><b>Follow the <a href="#install">install</a> guide</b></li>
+                            <li>
+                                <b>Import your settings</b>(1.1.0+) - After you have updated go to "Settings" > Import Settings. Go to
+                                the location where you saved your "BSC Applications Settings.json" file.
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+    
+                <div id="shortcuts" style="margin-bottom: var(--spacing);">
+                    <h1 class="title">Standard Keyboard Shortcuts</h1>
+                    <hr>
+                    <p class="hidden">
+                        <b>What are Standard Keyboard Shortcuts?</b> - Standard Keyboard Shortcuts are shortcuts for common actions that don't
+                        change. Actions such as Save, Open, and Copy are some Standard Keyboard Shortcuts. Here is the full list of Standard
+                        Keyboard Shortcuts:
+                    </p>
+    
+                    <p>
+                        <ul>
+                            <li><b>Save</b> - ctrl + s</li>
+                            <li><b>Open</b> - ctrl + o</li>
+                            <li><b>Copy</b> - ctrl + c</li>
+                            <li><b>Paste</b> - ctrl + v</li>
+                            <li><b>New</b> - ctrl + n</li>
+                            <li><b>Remove</b> - delete</li>
+                        </ul>
+                    </p>
+                </div>
+    
+                <div id="tempcontent" style="margin-bottom: var(--spacing);">
+                    <h1 class="title">Temporary Content</h1>
+                    <hr>
+                    <p class="hidden">
+                        <b>What is Temporary Content?</b> - Temporary Content is a form of storage used when navigating between
+                        apps. When you go to navigate from app to app BSC Applications stores all of your content, so that
+                        when you come back you can start where you left off.
+                    </p>
+    
+                    <p>
+                        <ul>
+                            <li>
+                                <b>Disable</b> - To disable Temporary Content go to Settings > Temporary Content. When you
+                                flip the switch to off it will clear and stop saving your Temporary Content.
+                            </li>
+                            <li>
+                                <b>Clear</b> - To clear your Temporary Content go to Settings > Clear. Please note that this
+                                action cannot be undone.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+    
+                <div id="media" style="margin-bottom: var(--spacing);">
+                    <h1 class="title">Supported Media</h1>
+                    <hr>
+    
+                    <p>
+                        <b>Media View</b>
+                        <ul>
+                            <li><b>bmp</b> 1.3.0+</li>
+                            <li><b>png</b> 1.3.0+</li>
+                            <li><b>jpeg</b> 1.3.0+</li>
+                            <li><b>jpg</b> 1.3.0+</li>
+                        </ul>
+                    </p>
+    
+                    <p style="margin-top: 25px;">
+                        <b>Notes</b>
+                        <ul>
+                            <li><b>rtf</b> init+</li>
+                            <li><b>txt</b> 0.2.0+</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
 		</section>
     </main>
