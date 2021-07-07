@@ -33,41 +33,30 @@
 
         .hidden { color: #131313a6; }
 
-        li {
-            color: #131313a6;
-            font-weight: lighter !important;
-            font-size: clamp(25px, 5vw + 1px, 1rem);
-        }
-
         b { color: #131313; }
 
         .versions { padding-top: 3.5rem; }
+        .versions li {
+            color: #131313a6;
+            font-weight: lighter !important;
+            font-size: clamp(25px, 5vw + 1px, 1rem);
+        }   
     </style>
 </head>
 
 <body>
-    <header class="site-header sticky-top header-light">
-        <nav class="container d-flex flex-column flex-md-row justify-content-between
-                    navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../image/brand/green.svg" alt="" width="30" height="24">
+    <nav>
+        <ul class="nav-container container">
+            <li class="nav-logo">
+                <a href="../index.html">
+                    <img src="../image/brand/green.svg">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="../index.html">Home</a>
-                        <a class="nav-link" href="../changelog.html">Changelog</a>
-                        <a class="nav-link active" href="../docs/BSC-Applications.html">Docs</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+            </li>
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="../changelog.html">Changelog</a></li>
+            <li class="nav-item active"><a href="../docs/bsc-applications.html">Docs</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section class="text-center hero vertical-center" style="margin-bottom: var(--spacing)">
@@ -205,7 +194,4 @@
 		</section>
     </main>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
 </html>
