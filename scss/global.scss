@@ -12,16 +12,28 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 @import url("../css/color.css");
 @import url("../css/nav.css");
 
 body {
-    font-family: 'Public Sans', sans-serif !important;
-    background: var(--stone-green-100);
-    color: var(--stone-green-900);
+    font-family: 'Inter', sans-serif !important;
+    background: white;
+    color: black;
     margin: 0;
+
+    &::-webkit-scrollbar {
+        width: .5rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: white;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 50px;
+        border: 3px solid white;
+    }
 }
 
 /*
@@ -34,13 +46,13 @@ h1 {
     line-height: 1.1;
 }
 p { 
-    opacity: .90;
+    opacity: 0.8;
     font-size: clamp(25px, 5vw + 1px, 1rem);
 }
 
-a { color: var(--stone-green-600); }
-a:hover { color: var(--stone-green-800); }
-a:active { color: var(--stone-green-700); }
+a { color: var(--green-500); }
+a:hover { color: var(--green-300); }
+a:active { color: var(--green-700); }
 
 .title { font-weight: bold; }
 
@@ -54,22 +66,17 @@ a:active { color: var(--stone-green-700); }
     line-height: 2rem;
 }
 .hero-title {
-    font-size: clamp(3rem, 5vw + 1rem, 4.5rem);
+    font-size: clamp(3rem, 5vw + 1rem, 5.5rem);
     line-height: 1.1;
-    max-width: 443.95px;
+    max-width: 1000px;
     font-weight: bold;
 }
 .hero-lead {
     font-size: 2rem;
-    opacity: .692;
+    opacity: .50;
     line-height: 1;
 }
-.hero-big {
-    font-size: clamp(3rem, 5vw + 1rem, 5rem);
-    line-height: 1.1;
-    max-width: 443.95px;
-    font-weight: bolder;
-}
+.hero-cta { padding: .5rem; }
 
 /*
  ========
@@ -99,23 +106,37 @@ a:active { color: var(--stone-green-700); }
     margin: 2rem 0;
 }
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
 /*
  ========
  Section 
  ========
 */
 section { 
+    background: black;
+    color: white;
     padding: 1rem 1rem;
     min-height: 100vh;
 }
-section:nth-child(even) { background: var(--stone-green-200); }
+section:nth-child(even) {
+    background: white;
+    color: black;
+}
 
 /*
  ========
  Promo 
  ========
 */
-.window {
-    border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.336);
+.promo {
+    box-shadow: 0px 4px 0px var(--green-500);
+    border-radius: 6px;
 }
+
+.green-bg { background: var(--green-500); }
+.green-fg { color: var(--green-500); }

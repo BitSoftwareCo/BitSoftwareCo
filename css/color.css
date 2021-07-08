@@ -1,13 +1,7 @@
 :root {
-  --stone-green-100: #d1e7dd;
-  --stone-green-200: #a3cfbb;
-  --stone-green-300: #75b798;
-  --stone-green-400: #479f76;
-  --stone-green-500: #198754;
-  --stone-green-600: #146c43;
-  --stone-green-700: #0f5132;
-  --stone-green-800: #0a3622;
-  --stone-green-900: #051b11;
+  --green-700: hsl(153, 100%, 70%);
+  --green-500: hsl(153, 100%, 50%);
+  --green-300: hsl(153, 100%, 30%);
 }
 
 /*# sourceMappingURL=color.css.map */

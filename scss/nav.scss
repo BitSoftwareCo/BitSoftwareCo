@@ -7,15 +7,10 @@
 nav {
     font-size: var(--nav-font-size);
 
-    background: #d1e7dda1;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter:         blur(10px);
-    border-style: solid;
-    border-color: #0000001a;
-    border-width: 1px 0;
+    background: black;
+    color: white;
 
-    position: sticky;
-    top: 0;
+    padding: .5rem;
     z-index: 100;
 }
 
@@ -36,7 +31,7 @@ nav ul {
     text-decoration: none;
     color: var(--stone-green-900);
 }
-.active { font-weight: bold; }
+.active { color: var(--green-500); }
 
 .nav-logo img {
     width: 30px;
