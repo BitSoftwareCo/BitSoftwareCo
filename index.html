@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <title>Redirecting (5)</title>
 </head>
+    <h1 id="title">Redirecting 5</h1>
+    <p id="paragraph">Redirecting you to 'abstract-co.github.io' in 5.</p>
 <script>
-    window.location.replace("https://abstract-co.github.io/");
+    let timeleft = 5;
+    let redirectTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(redirectTimer);
+            window.location.replace("https://abstract-co.github.io/");
+        }
+
+        document.title = "Redirecting (" + timeleft + ")";
+        document.getElementById("title").textContent = "Redirecting " + timeleft;
+        document.getElementById("paragraph").textContent = "Redirecting you to 'abstract-co.github.io' in " + timeleft + ".";
+
+        timeleft--;
+    }, 1000);
 </script>
 </html>
