@@ -7,19 +7,19 @@
     <title>Redirecting (5)</title>
 </head>
     <h1 id="title">Redirecting 5</h1>
-    <p id="paragraph">Redirecting you to 'abstract-co.github.io' in 5.</p>
-<script src="https://abstract-co.github.io/redirect.js">
+    <p id="paragraph">Redirecting you to 'gethellotools.github.io' in 5.</p>
+<script src="https://gethellotools.github.io/redirect.js">
 <script>
     let timeleft = 5;
     let redirectTimer = setInterval(function(){
         if(timeleft <= 0){
             clearInterval(redirectTimer);
-            window.location.replace("https://abstract-co.github.io/");
+            window.location.replace("https://gethellotools.github.io/");
         }
 
         document.title = "Redirecting (" + timeleft + ")";
         document.getElementById("title").textContent = "Redirecting " + timeleft;
-        document.getElementById("paragraph").textContent = "Redirecting you to 'abstract-co.github.io' in " + timeleft + ".";
+        document.getElementById("paragraph").textContent = "Redirecting you to 'gethellotools.github.io' in " + timeleft + ".";
 
         timeleft--;
     }, 1000);
